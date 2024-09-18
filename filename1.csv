@@ -1,0 +1,771 @@
+Case_ID,Work_Order_Number,Service_Account,Created_On,Due_Date,Active_Resource,Due_Date__Customer_,Original_RDT,Requested_Date_Time,Requested_Date_Time__Customer_,Resolution_Notes__Diagnostics,System_Status,Primary_Incident_Type,Finished_on_Date,Delay_Codes,Actual_Arrival_Time__Active_Booking___Bookable_Resource_Booking_,Actual_Arrival_Time__Customer___Active_Booking___Bookable_Resource_Booking_,Service_Territory,Case_Subject__Case_ID___Case_,Product_Serial_Number__Case_ID___Case_,ProductName__Case_ID___Case_,Postal_Code,Manager
+5113866499,WO-023221650,    System Tech,45225.74786,45229.77083,Peter Lekanis,45229.72917,,45229.77083,45229.72917,"TOUCHPAD LEFT CLICK ISSUE. 
+REPLACED TOUCHPAD. 
+RAN DIAGNOSTIC TOOL TOK. ",Closed - Posted,PC Problem-APJ-Computing,45231.02112,2-Parts Issue,45231.00029,45230.95862,Computing-APJ-AU-QLD_Gold Coast North,AU/ WARR/ NBD/ ONS/  HP Pro x360 435 13.3 inch G9 Noteb/ TOUCHPAD ISSUE,5CG2384645,HP Pro x360 435 13.3 inch G9 Notebook PC (58G33AV),4217,James Wehl
+5113797829,WO-023234525-1,Christian College,45229.60098,45229.77083,Duane Dingley,45229.72917,45225.72917,45225.77083,45225.72917,Replaced top cover and touchpad.  Touchpad issues persisted. Requested replacement cable kit on a follow-up WO. ,Closed - Posted,PC Problem-APJ-Computing,45231.0348,2-Parts Issue,45230.51466,45230.473,Computing-APJ-AU-QLD_MAROOCHYDORE South,AU/ CNBD/ NBD/ ONS/  HP ProBook x360 11 G6 EE Notebook PC/ TOUCHPAD REPLACE,5CG136047Q,HP ProBook x360 11 G6 EE Notebook PC,4559,James Wehl
+5113488691,WO-023155597,    System Tech,45219.66836,45233.77083,Peter Lekanis,45233.72917,45219.72917,45233.77083,45233.72917,"SCREEN FLICKERING. 
+TOUCHPAD LEFT CLICK ISSUE. 
+REPLACED LCD PANEL HUD. 
+REPLACED TOUCHPAD. 
+RAN DIAGNOSTIC TOOL TOK. ",Closed - Posted,PC Problem-APJ-Computing,45231.05231,2-Parts Issue,45231.02106,45230.9794,Computing-APJ-AU-QLD_Gold Coast North,"AU/ CNBD/ NBD/ ONS/ HP EliteBook x360 830 G7 / Touchpad, Freezing issue",5CG1020PQN,HP EliteBook x360 830 G7 Base Model Note,4217,James Wehl
+5113093029,WO-023108873,Elimbah State School Dean Thomas,45216.75941,45218.77083,Kavan Ramsay,45218.72917,45212.72917,45218.77083,45218.72917,"Boot tested unit and unit is booting. Will return mb unused, as this might have been a windows update needed to.run,
+
+On dissambly i found that the ferrals have failed 
+Will request follow up wo with top cover
+I have not yet replaced tge lcd and base enclosure and have left tgis witg unit 
+And have left mb with unit also jist in case. 
+If no issue found with mb after i replaced tge lcd i will return mb as unused
+Found that after seral boots the unit would stop posti g. Mb replaced. Oy to find that the new mb is doa. Have requested follow up wo with new mb",Closed - Posted,PC Problem-APJ-Computing,45231.06461,2-Parts Issue,45230.94308,45230.90141,Computing-APJ-AU-QLD_Greater North East,AU/ CNBD/ NBD/ ONS/ HP ProBook x360 435 G7 Notebook PC (8RA6/ NO BOOT & BASE FAULTY,5CG1025LW2,HP ProBook x360 435 G7 Notebook PC (8RA66AV),4017,James Wehl
+5113730707,WO-023187671,Rocket IT,45223.54568,45224.625,AUA-PR-CSR_Infinet,45224.70833,,45224.625,45224.70833,,Closed - Posted,PC Problem-APJ-Computing,45231.06528,8-Customer caused Delay,45231.05833,45231.14167,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/ HP P24 G5 FHD MNTR/ Lines on Display,CNC3131Z9W,HP P24 G5 FHD Monitor,632,Ashley Moris
+5113780102,WO-023201872,MINISTRY OF SOCIAL DEVELOPMENT,45224.43795,45226.66667,NZA-PR-Infinet_NZ,45225.70833,,45226.66667,45225.70833,,Closed - Posted,PC Problem-APJ-Computing,45231.06667,8-Customer caused Delay,45231.05972,45231.14306,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ CSR/ BO/ HP 24-inch E-Series Monitors / SCM: Monitor Issue,CN41350PDF, HP E24 G4 FHD No Stand Monitors,3204,Ashley Moris
+5113792612,WO-023227066,Cyclone  Computers Christchurch,45225.98463,45230.6875,NZA-PR-Infinet_NZ,45229.72917,,45230.6875,45229.72917,,Closed - Posted,PC Problem-APJ-Computing,45231.06667,8-Customer caused Delay,45231.05972,45231.14306,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/ HP P24 G4 24 FHD Monitor/  Monitor not displaying,3CM220065M,HP P24 G4 24 FHD Monitor,8011,Ashley Moris
+5113865760,WO-023219693,Tourism New Zealand,45225.65181,45229.64583,NZA-PR-Infinet_NZ,45229.72917,,45229.64583,45229.72917,,Closed - Posted,PC Problem-APJ-Computing,45231.06736,8-Customer caused Delay,45231.06042,45231.14375,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/   HP E24d G4 FHD Docking Monitor/ SCM:MONITOR,3CQ0241YKT,HP E24d G4 FHD USB-C Docking Monitor,1010,Ashley Moris
+5113413842,WO-023154021,PB - Tech,45219.54162,45222.64583,NZA-PR-Infinet_NZ,45222.72917,,45222.64583,45222.72917,,Closed - Posted,PC Problem-APJ-Computing,45231.06944,8-Customer caused Delay,45231.0625,45231.14583,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/ HP P24h G4 FHD Monitor/ Screen Display Issue,3CM2233JPD,HP P24h G4 FHD Monitor,627,Ashley Moris
+5113655499,WO-023201778-1,Danielle Rouse,45229.51843,45230.72917,Ankit Giri,45230.72917,,45230.72917,45230.72917,"31/10: microphone issue
+Replaced motherboard
+Issue resolved after replacing motherboard. However, mic working in usb live boot ubuntu, diagnostics, not working in windows, Asked user to reimage the system.-Ankit",Closed - Posted,PC Problem-APJ-Computing,45231.08892,2-Parts Issue,45231.02434,45231.02434,Computing-APJ-AU-VIC_METRO OUTER CITY,AU/ CNBD/ NBD/ ONS/ HP EliteBook 840 14 inch G9 Notebook PC (4B855AV)/ Audio issue,5CG3210R5T,HP EliteBook 840 14 inch G9 Notebook PC (4B855AV),3066,Senthil Kumar Swaminathan
+5113929570,WO-023234996,Default Deloitte Services Pty Ltd,45226.70236,45230.72917,AUA-PR-CSR_Infinet,45230.72917,,45230.72917,45230.72917,"Delivered SYDNEY NSW, 2000 Date &amp;amp; timeWed 1 Nov • 11:22am",Closed - Posted,PC Problem-APJ-Computing,45231.09236,8-Customer caused Delay,45231.08472,45231.08472,Computing-APJ-AU-NSW_METRO CBD,DaaS / AU/ WARR/ NBD/ ONS/  HP E34m G4 WQHD Curved USB-C Conferencin/ FAULTY MONITOR DISPLAY,CNC2511CVJ,HP E34m G4 WQHD Curved USB-C Conferencing Monitor,2000,Ashley Moris
+5113925396,WO-023232581,Samuel Yau,45226.53101,45229.70833,AUA-PR-CSR_Infinet,45229.70833,,45229.70833,45229.70833,"Delivered ARTARMON NSW, 2064 Date &amp;amp; timeWed 1 Nov • 12:49pm",Closed - Posted,PC Problem-APJ-Computing,45231.09306,8-Customer caused Delay,45231.08611,45231.08611,Computing-APJ-AU-NSW_METRO NTH SYD,AU/ WARR/ NBD/ ONS/ HP E24i G4 WUXGA Monitor/ Lines on display,6CM2030TRG,HP E24i G4 WUXGA Monitor,2064,Ashley Moris
+5113855037,WO-023243954,Evergreen Life Care,45227.15706,45229.72917,AUA-PR-CSR_Infinet,45229.72917,,45229.72917,45229.72917,"Delivered KANGY ANGY NSW, 2258 Date &amp;amp; timeWed 1 Nov • 12:23pm",Closed - Posted,PC Problem-APJ-Computing,45231.09444,8-Customer caused Delay,45231.0875,45231.0875,Computing-APJ-AU-NSW_CENTRALCOASTSOUTH,AU/ WARR/ NBD/ ONS/ HP P24h G4 FHD Monitor/ Blank screen issue,3CM2122WFK,HP P24h G4 FHD Monitor,2258,Ashley Moris
+5113864835,WO-023251444,Origin Energy,45229.58902,45230.72917,AUA-PR-CSR_Infinet,45230.72917,,45230.72917,45230.72917,"Delivered MELBOURNE VIC, 3000 Date &amp;amp; timeWed 1 Nov • 3:17pm",Closed - Posted,PC Problem-APJ-Computing,45231.09444,8-Customer caused Delay,45231.0875,45231.0875,Computing-APJ-AU-VIC_METRO CITY,AU/ WARR/ NBD/ ONS/  HP EliteDisplay E243d 23.8-inch Docking/ MONITOR |,CNC0251GPW,HP EliteDisplay E243d 23.8-inch Docking Monitor,3000,Ashley Moris
+5113929618,WO-023250066,Winc Australia - Default,45229.16171,45230.72917,AUA-PR-CSR_Infinet,45230.72917,,45230.72917,45230.72917,,Closed - Posted,Depot Repair,45231.10347,8-Customer caused Delay,45231.09653,45231.03403,Computing-APJ-AU-VIC-Regional FLN,AU/ WARR/ NBD/ ONS/ HP E24 G5 FHD Monitor/ Monitor has vertial lines,CN432723NN,HP E24 G5 FHD Monitor,810,Ashley Moris
+5113858984,WO-023217455,Cliff Bridge,45225.47288,45226.77083,Peter Lekanis,45226.72917,45226.72917,45226.77083,45226.72917,"PWR ISSUE. 
+REPLACED MB.
+RAN DMI CONFIG. 
+RAN DIAGNOSTIC TOOL TOK. ",Closed - Posted,PC Problem-APJ-Computing,45231.1147,2-Parts Issue,45231.08345,45231.04178,Computing-APJ-AU-QLD_Gold Coast South,AU/ CNBD/ NBD/ ONS/ HP ProDesk 400 G6 Desktop Mini PC (9AG50AV)/ Unit does not power ON,8CC1242TFC,HP ProDesk 400 G6 Desktop Mini PC (9AG50AV),4228,James Wehl
+5113799880,WO-023239144,Casey Gadd,45226.86375,45229.64583,AUA-PR-CSR_Infinet,45229.60417,,45229.64583,45229.60417,"Delivered NOOSAVILLE QLD, 4566 Date &amp;amp; timeThu 2 Nov • 12:42pm",Closed - Posted,PC Problem-APJ-Computing,45231.21806,8-Customer caused Delay,45231.21111,45231.16944,Computing-APJ-AU-QLD_MAROOCHYDORE North,MO-PayG - Faulty Monitor,3CM13700NG,HP M27fw FHD Monitor,4566,Ashley Moris
+5112595393,WO-022957842-1,Agtrans,45218.55332,45219.64583,NZA-PR-DTSL-Print,45219.72917,45204.72917,45219.64583,45219.72917,After running several cleaning cycles the printer still had ink sypply issues causing patchy print.. replaced the printbar and completed calibrations. tested ok and returned printer to site ,Closed - Posted,Print Problem-APJ-Printing,45231.27292,2-Parts Issue,45231.01944,45231.10278,Printing-APJ-NZ_REGIONAL,NZ/HP PageWide Pro MFP 577z Printer/ scanner failure,CN0BBMY026,HP PageWide Pro 577z Multifunction Printer,4673,Blair Willers - DTSL
+5112645917,WO-022958494-1,Agtrans,45217.60351,45218.64583,NZA-PR-DTSL-Print,45217.6875,,45218.64583,45217.6875,After cleaning ink from spill in waste ink container area printer still was printing misaligned. removed all covers and cleaned ink from paper feed encoder and paper feed gear train.. reassemble and tested printer.. al printing ok now,Closed - Posted,Print Problem-APJ-Printing,45231.28403,8-Customer caused Delay,45231.19097,45230.23264,Printing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/ HP PageWide Pro MFP 577z Printer/ Ink leakage,CN0BAMY0DV,HP PageWide Pro 577z Multifunction Printer,4673,Blair Willers - DTSL
+5113793660,WO-023203682,New Zealand Police_default,45224.61956,45231.64583,NIKHIL RABADIA,45231.72917,45225.72917,45231.64583,45231.72917,"Reception was closed 
+
+Finally got in
+Called Elise to guide to Rakana office 
+
+Received battery ia doa
+Ran diagnostics pass but unit powers of as soon as power is Unplugged
+Contacted Team leader ordered additional batteryor follow up
+Let users secretary know
+",Closed - Posted,PC Problem-APJ-Computing,45231.29914,8-Customer caused Delay,45231.2502,45231.33353,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ CNBD/ NBD/ ONS/ 6YN42PA/ Swollen Battery,5CD9164P24,HP EliteBook x360 1030 G3 Notebook PC,2019,Blair Willers
+5113549679,WO-023171863-2,New Zealand Couriers,45229.56987,45231.64583,Shellton Smit,45231.72917,,45231.64583,45231.72917,"01/11 Arrived onsite as agreed 9am. And got these messages as i pulled i to the carpark. 
+David: Trying to get the laptop now.  Will confirm once I have it.
+Me: Hi David, I had just arrived when you messaged. Any luck ? Because  I have another appointment in Ponsonby at 10. 
+David: No luck sorry. Will confirm tomorrow once I have the laptop.
+Then we can book any time Thursday or Friday 
+Sorry this ticket has been mucking you around so much. ",Closed - Posted,PC Problem-APJ-Computing,45231.3131,8-Customer caused Delay,45231.29194,45231.37528,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/ HP EliteBook x360 1030 G8 Notebook PC/ USB-A port faulty,CND15033QM,HP EliteBook x360 1030 G8 Notebook PC (1G7F8AV),1061,Blair Willers
+5113859525,WO-023250232,Noel Leeming,45229.38668,45232.6875,NZA-PR-DTSL-Bench,45231.72917,,45232.6875,45231.72917,"31/10 Received only device for the diagnose. Diagnosed the unit and found Device comes up with an error message saying cooling fan is not working. Cleaned system fan, Updated BIOS. Still system fan not working. Spoke to CEA (Nitin)  and ordered system fan. 01/11  Replaced system fan. Unit tested and system fan working fine. Device boot in to windows fine without any fan related error now. Tested OK. Part retuned box no 18488. N10519-001 : Failure code 73",Closed - Posted,Depot Repair,45231.31736,0-Response Met,45231.24028,45230.28194,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ 2BD/ CARRY IN/ HP Laptop PC 15-dw4000 (4Z345AV)/ FAN ERROR 90B,CND2310T7N,HP Laptop PC 15-dw4000 (4Z345AV),9710,Blair Willers - DTSL
+5113919454,WO-023231638,anzcofoods,45226.36627,45230.6875,NZA-PR-DTSL-Onsite,45229.72917,,45230.6875,45229.72917,Confirmed fault with noisy fan with Michael. Replaced fan and also cleaned and reapplied thermal paste to heatsink as issue could be heat related. Fan noise acceptable at the moment. Educated CU regarding how the fans will be noiser when the CU is doing heavier workloads on the laptop. I advised I will keep the job open until Friday to confirm that the issue is resolved,Closed - Posted,PC Problem-APJ-Computing,45231.32292,2-Parts Issue,45231.22222,45231.30556,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/ HP ZBook Power 15.6 inch G10/ Noisy Fan,5CD333HWF3,HP ZBook Power 15.6 inch G10 Mobile Workstation PC IDS Base Model,8053,Blair Willers - DTSL
+5112628867,WO-023024228,harveynorman,45209.75572,45219.72917,AUA-EEG-PR-Bench-APCD,45219.72917,,45219.72917,45219.72917,"PND case, could not generate error code
+
+Problem
+- customer reported unit with no power issue
+- replicated, topcover and lcd back cover got a few damaged spots, unit no power to motherboard, screws missing
+
+Solution:
+- replaced motherboard and quote on topcover and lcd back cover was rejected
+
+Post windows environment checklist-
+
+- boots into Windows (Passed)
+- Sound              (Passed)
+- WIFI               (Passed)
+- Keyboard           (Paased)
+- Touchpad           (Passed)
+- Battery Charging   (Paased)
+- USB port           (Paased)
+- Service            (Done)
+
+
+================================================
+HP PC Hardware Diagnostics UEFI test rsult from QR code
+
+Model: HP Pavilion x360 2-in-1
+Serial Number: 8CG23807WK
+Product ID: 6W4H4PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-26 11:49:14   Webcam [Con]         Passed     NA
+2023-10-26 11:49:08   Video [P]            Passed     NA
+2023-10-26 11:48:29   USB Port             Passed     NA
+2023-10-26 11:48:22   TPM Test             Passed     NA
+2023-10-26 11:48:08   Touch Screen [P]     Passed     NA
+2023-10-26 11:48:03   Wireless Module      Passed     NA
+2023-10-26 11:47:54   Mouse [P]            Passed     NA
+2023-10-26 11:47:27   Keyboard             Passed     NA
+2023-10-26 11:14:19   Fan [S]              Passed     NA
+2023-10-26 11:14:15   Bluetooth Module     Passed     NA
+2023-10-26 11:14:08   Audio [P]            Passed     NA
+2023-10-26 11:13:54   Battery              Passed     NA
+2023-10-26 11:10:11   System [F-1]         Passed     NA
+
+<END>
+Note: 
+- Bitlocker has been triggered after a motherboard replacement. Please follow Microsoft’s instructions at this link to retrieve your BitLocker key.
+  https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6",Closed - Posted,Depot Repair,45231.32541,2-Parts Issue,45218.44265,45218.44265,Computing-APJ-AU-VIC_METRO SOUTH,AU/ CNBD/ NBD/ PURR/  HP Pavilion x360 14 inch 2-in-1 Laptop P/ NO POWER,8CG23807WK,HP Pavilion x360 14 inch 2-in-1 Laptop PC 14-ek0000 (54B26AV),3189,Riley Burns
+5113930872,WO-023234228,JBHIFI  BENDIGO,45226.65464,45238.72917,AUA-EEG-PR-Bench-APCD,45238.72917,,45238.72917,45238.72917,"Issues we found  -   
+
+- Boot and camera issue (Operating system is corrupted). 
+
+Solution we made  -     
+
+- Re Imaged the laptop using Hp cloud recovery. (Tested) 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Touch Screen          (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+Model: HP ENVY x360 2-in-1 Laptop 13-bf0xxx
+Serial Number: CND2341FGD
+Product ID: 6X0R1PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 16:09:11   Webcam [Con]         Passed     NA
+2023-10-31 16:09:07   Wireless Module      Passed     NA
+2023-10-31 16:08:56   Keyboard             Passed     NA
+2023-10-31 16:08:54   Bluetooth Module     Passed     NA
+2023-10-31 16:08:46   Audio [P]            Passed     NA
+2023-10-31 16:08:40   Battery              Passed     NA
+2023-10-31 16:03:57   System [F-1]         Passed     NA
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.32606,0-Response Met,45230.37648,45230.37648,Computing-APJ-AU-VIC-Regional FLN,AU/ WARR/ NBD/ PURR/ HP ENVY x360 13.3 inch 2-in-1 Laptop PC 13-bf0/ multiple issue/Solvup:- 8931720,CND2341FGD,HP ENVY x360 13.3 inch 2-in-1 Laptop PC ,3550,Riley Burns
+5113427296,WO-023155665,Wayne Clarke,45219.67216,45237.72917,AUA-EEG-PR-Bench-APCD,45237.72917,,45237.72917,45237.72917,"Issues we found  -   
+
+- Battery is weak
+- Thermal module is faulty 
+
+Solution we made  -     
+
+- Replaced battery. (Tested)
+- Replaced thermal module. (Tested) 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Touch Screen          (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+Model: HP Spectre x360 Convertible 13aw0043TU
+Serial Number: 5CD0148X3H
+Product ID: 8TX66PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 16:06:24   Webcam               Passed     NA
+2023-10-31 16:06:23   Wireless Module      Passed     NA
+2023-10-31 16:06:08   Keyboard             Passed     NA
+2023-10-31 16:06:05   Fingerprint Reader   Passed     NA
+2023-10-31 16:06:01   Bluetooth Module     Passed     NA
+2023-10-31 16:05:54   Audio [P]            Passed     NA
+2023-10-31 16:05:35   Power                Passed     NA
+2023-10-31 16:03:15   System [F-1]         Passed     NA
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.32686,0-Response Met,45230.57175,45230.57175,Computing-APJ-AU-NSW_METRO HILLS,AU/ WARR/ ACG/ NBD/ PURR/  HP Spectre x360 - 13-aw0043tu/ battery and thermal module issue,5CD0148X3H,HP Spectre x360 - 13-aw0043tu,2154,Riley Burns
+5113167024,WO-023106774,Louisa Ng,45216.67346,45226.72917,AUA-EEG-PR-Bench-APCD,45226.72917,,45226.72917,45226.72917,"Issues we found  -   
+
+- Webcam is faulty
+
+Solution we made  -     
+
+- Replaced webcam. (Tested) 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Touch Screen          (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+Model: HP ENVY x360 Convertible
+Serial Number: CND14811RL
+Product ID: 1B8Y6PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 15:35:33   Wireless Module      Passed     NA
+2023-10-31 15:35:20   Keyboard             Passed     NA
+2023-10-31 15:35:16   Fingerprint Reader   Passed     NA
+2023-10-31 15:35:04   Audio [P]            Passed     NA
+2023-10-31 15:34:14   System [F-1]         Passed     NA
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.32765,0-Response Met,45230.43756,45230.43756,Computing-APJ-AU-NSW_METRO NTH SHORE,AU/ WARR/ 3BD/ PURR/ HP ENVY x360 Laptop - 13-ay0096au/ camera issue,CND14811RL,HP ENVY x360 Laptop - 13-ay0096au,2093,Riley Burns
+5113789966,WO-023217339,Andy Rawlinson,45225.44925,45237.72917,AUA-EEG-PR-Bench-APCD,45237.72917,,45237.72917,45237.72917,"The unit has intermittent no power caused by a faulty system board.
+
+Replaced the system board. tested OK
+The Bitlocker has been triggered after a system board replacement. Please follow Microsoft’s instructions at this link to retrieve your BitLocker key.
+https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6.
+
+
+
+Post-repair checklist passed with display, keyboard, touchpad, wifi, audio, webcam, and battery charging. 
+Machine clean and dispatched.
+===========================================================================================
+HP PC Hardware Diagnostic UEFI test result from QR code
+
+Model: OMEN by HP Gaming Laptop
+Serial Number: 5CD2480GJ2
+Product ID: 71K89PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 15:12:51   System [F-1]         Passed     NA
+2023-10-31 15:12:40   Wireless Module      Passed     NA
+2023-10-31 15:12:28   Mouse [P]            Passed     NA
+2023-10-31 15:11:48   Keyboard             Passed     NA
+2023-10-31 15:11:30   Audio [P]            Passed     NA
+2023-10-31 15:11:19   Battery              Passed     NA",Closed - Posted,Depot Repair,45231.32861,0-Response Met,45229.47484,45229.47484,Computing-APJ-AU-VIC_METRO CITY,AU/ WARR/ 2BD/ PURR/ OMEN Gaming Laptop 16-n0066AX (71K89PA)/ Unit does not power ON,5CD2480GJ2,OMEN by HP 16.1 inch Gaming Laptop 16-n0000 (5B1T6AV),3031,Riley Burns
+5111898662,WO-022867104,Graeme Edgar,45195.4061,45205.72917,AUA-EEG-PR-Bench-APCD,45205.72917,,45205.72917,45205.72917,"The unit has a keyboard issue caused by the Windows system file being corrupted which required reimage.
+
+Reimage with HP cloud recovery. tested OK
+Run hardware diagnostic system test OK no hardware fault found
+Run CPU/GPU stress test OK temperature under the specification
+Post/boot windows multiple times with functions and monitor the unit all tested OK
+
+Post-repair checklist passed with display, keyboard, touchpad, wifi, audio, webcam, and battery charging. 
+Machine clean and dispatched.
+===========================================================================================
+HP PC Hardware Diagnostic UEFI test result from QR code
+
+Model: HP Laptop 15s-fq2xxx
+Serial Number: 5CD1165Q1C
+Product ID: 31X08PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 15:28:13   System [F-1]         Passed     NA
+2023-10-31 15:28:04   Wireless Module      Passed     NA
+2023-10-31 15:27:53   Mouse [P]            Passed     NA
+2023-10-31 15:27:07   Keyboard             Passed     NA
+2023-10-31 15:26:49   Audio [P]            Passed     NA
+2023-10-31 15:26:22   Battery              Passed     NA",Closed - Posted,Depot Repair,45231.32926,0-Response Met,45229.4081,45229.4081,Computing-APJ-AU-NSW_METRO SHIRE,AU/ WARR/ NBD/ PURR/ HP Laptop PC 15s-fq2000 (2D120AV)/ KB ISSUE,5CD1165Q1C,HP Laptop PC 15s-fq2000 (2D120AV),2226,Riley Burns
+5112649970,WO-022959415,JBHIFI HOME ROCKHAMPTON,45203.83157,45215.77083,AUA-EEG-PR-Bench-APCD,45215.72917,,45215.77083,45215.72917,"Issues we found  -   
+
+- WIFI issue (Operating system is corrupted). 
+
+Solution we made  -     
+
+- WIFI test done. (Passed)
+- Re Imaged the laptop using Hp cloud recovery. (Tested) 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+Model: HP Laptop 15s-du3xxx
+Serial Number: CND1504RPQ
+Product ID: 639C4PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 16:19:48   Webcam [Con]         Passed     NA
+2023-10-31 16:19:46   Wireless Module      Passed     NA
+2023-10-31 16:19:32   Keyboard             Passed     NA
+2023-10-31 16:19:30   Bluetooth Module     Passed     NA
+2023-10-31 16:19:24   Audio [P]            Passed     NA
+2023-10-31 16:19:08   Power                Passed     NA
+2023-10-31 16:18:10   System [F-1]         Passed     NA
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.32975,0-Response Met,45230.57238,45230.53072,Computing-APJ-AU-QLD_REGIONAL,AU/ WARR/ ACG/ NBD/ PURR/ HP Laptop PC 15-dw3000 (1A3Y0AV)/ Wi-Fi Issue/Solvup:- 8867041,CND1504RPQ,HP Laptop PC 15-dw3000 (1A3Y0AV),4701,Riley Burns
+5113948543,WO-023250275,Bakertillysr,45229.42608,45231.6875,NZA-PR-DTSL-Onsite,45230.72917,,45231.6875,45230.72917,Confirmed Fault with Fabiano .. Updated Audio Driver on 3 unitsModel                                Serial initial driver versionworked ok after updateHP Elite Mini 600 G9 Desktop PC (6E7X4PA)        8CC2520T6V6.0.9557.1YesHP Elite Mini 800 G9 Desktop PC (7E7Z8AV)        8CC332244G6.0.9557.1YesHP Elite x360 1040 14 inch G9 Notebook PC (6Q165PA)5CG2500BS06.0.9556.1YesTested and confirmed Headset and speakers both working ok after Update..Advised Fabiano That HP are working on a solution for the other units in the fleet and I will leave this call open as testing for now  and will escallate to get a resolution for the other units with the issue.,Closed - Posted,PC Problem-APJ-Computing,45231.33958,7-Subcase recd late from Call Center,45231.26736,45230.30903,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/ HP Elite x360 1040 14 inch G9 2-in-1 Not/ Audio Issue,5CG2500BS0,HP Elite x360 1040 14 inch G9 2-in-1 Notebook PC (4C056AV),4310,Blair Willers - DTSL
+5113490571,WO-023155664,Noel Leeming St Lukes Mega Centre,45219.67214,45232.64583,NZA-PR-DTSL-Bench,45232.72917,,45232.64583,45232.72917," open back panel and removed battery. changed LCD panel. run windows diagnostic and tested all components ok. after replaced battery, tested and find it working fine now. ",Closed - Posted,Depot Repair,45231.35347,7-Subcase recd late from Call Center,45231.25625,45231.33958,Computing-APJ-NZ_AUCKLAND CENTRAL,CRM/NZ/TRADE/Q3BD/3BD/CARRY IN/  HP Pavilion - 15-cs3099tx/ DISPLAY AND BATTERY ISSUE,5CD9522GP3,HP Pavilion - 15-cs3099tx,2110,Blair Willers - DTSL
+5113849561,WO-023219583,staplestaranaki_,45225.64269,45231.64583,NZA-PR-DTSL-Onsite,45231.72917,,45231.64583,45231.72917,"Confirmed fault, replaced cpu fan, sound continued, updated drivers, called ce assist and requested follow up job with GPU fan.",Closed - Posted,PC Problem-APJ-Computing,45231.35347,2-Parts Issue,45231.30556,45231.38889,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/ HP Z2 Mini G5 Workstation/ Fan Issue,8CN1250SQS,HP Z2 Mini G5 Workstation (9JD37AV),4340,Blair Willers - DTSL
+5111831210,WO-022789867-1,CFMEU,45225.57546,45226.72917,TAM PHAM,45226.72917,45189.72917,45226.72917,45226.72917,Went obtained all jnfo required by 2LS,Closed - Posted,Print Problem-APJ-Printing,45231.35459,8-Customer caused Delay,45230.56453,45230.56453,Printing-APJ-AU-VIC_METRO CITY,AU/ CNBD/ NBD/ ONS/ HP LaserJet Managed E60155dn Printer/ picking multiple papers from Tray 3,CNMRN7G01R,HP LaserJet Managed E60155dn,3000,Senthil Kumar Swaminathan
+5113790894,WO-023202061,David Jacobs,45224.48749,45231.25,Shellton Smit,45231.33333,,45231.25,45231.33333,1/11 Could not get the firmware installed due to some other software issues. ,Closed - Posted,PC Problem-APJ-Computing,45231.35851,8-Customer caused Delay,45231.32752,45231.41086,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/  HP Elite x2 G8/ Overheating Issue,CND2201WF4,HP Elite x2 G8 Tablet (28R57AV),1021,Blair Willers
+5110658742,WO-022544968,Lion - Auckland Central,45167.59206,45231.64583,Rence Cayanan,45231.72917,,45231.64583,45231.72917,Verified SN. Replaced damaged part and installed a new one. Ran diags and tested all keys. All working okay,Closed - Posted,PC Problem-APJ-Computing,45231.3706,2-Parts Issue,45231.34034,45231.42367,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ Q3BD/ TRADE/ 3BD/ ONS/ HP EliteBook 835 G8 Notebook PC/ quote for replacement Chassis,5CG2021F8B,HP EliteBook 835 G8 Notebook PC IDS Base Model,1010,Blair Willers
+5111426653,WO-022736509-5,Rocketlab NZ - ROCKET LAB LIMITED,45224.7461,45225.64583,Edison Peralta,45225.72917,,45225.64583,45225.72917,Replaced HHD and upgrade FW to 5.6.0.2. Test print config page and supplies page. Jamming onright side door. Logged CEA and ordered exit assy.,Closed - Posted,Printer Problem-APJ-dMPS,45231.37124,2-Parts Issue,45231.32591,45231.40925,MPS-APJ-NZ_AUCKLAND CENTRAL,A3 - NZ/MPS/NBD/EM/HW/HP Color LaserJet Managed Flow MFP E78330z/Any document that is scanned comes out blank. Either using the scanning tray or flatbed scanner. We have Papercut enabled on this device,CNB1Q5T5BN,HP Color LaserJet Managed Flow MFP E7833,1060,Blair Willers
+5113272051,WO-023152812,Harvey Norman,45219.33169,45233.6875,NZA-PR-DTSL-Bench,45232.72917,,45233.6875,45232.72917,"replaced LCD panel, run windows diagnostics, all components tested ok. ",Closed - Posted,Depot Repair,45231.37292,0-Response Met,45231.27639,45230.31806,Computing-APJ-NZ_REGIONAL,NZ/ QNBD/ TRADE/ 3BD/ PURR/ HP 15s-eq1000 Laptop PC (8WQ33AV)/ Display,5CD225DTBW,HP 15s-eq1000 Laptop PC (8WQ33AV),3200,Blair Willers - DTSL
+5113799487,WO-023212611,Dredging Solutions,45225.01453,45231.72917,AUA-EEG-PR-PSGAWAONSITE,45231.72917,,45231.72917,45231.72917,attended site replaced parts all tested working,Closed - Posted,PC Problem-APJ-Computing,45231.375,8-Customer caused Delay,45231.34375,45231.34375,Computing-APJ-AU-NSW_REGIONAL,AU/ WARR/ NBD/ ONS/ HP EliteBook 840 G7 Notebook PC/ SCM : KB Issue,5CG10137ZJ,HP EliteBook 840 G7 Notebook PC (8PZ97AV),2336,Allan Dixon
+5113934924,WO-023238233,JUNIOR ADVENTURES GROUP RELIANCE HR SOLUTIONS,45226.82697,45231.72917,Alan Green,45231.72917,45229.72917,45231.72917,45231.72917,Unboxed and installed new printer in same location as old printer. Connected wireless device and configured network settings. Notified Declan that unit was online. Removed old printer from site and into storage location. ,Closed - Posted,IMACD-APJ-Printing,45231.37559,8-Customer caused Delay,45231.33343,45231.33343,Printing-APJ-AU-VIC_METRO SOUTH EAST,CMD/ AU/ WARR/ NBD/ ONS/ 3QA75A/ IMACD INSTALLTION,CNCRR370S0,HP Color LaserJet Managed MFP E47528f,3978,Senthil Kumar Swaminathan
+5113561086,WO-023155266,Southland Boys' High School - TELA,45219.64811,45231.64583,NZA-PR-DTSL-Onsite,45231.72917,,45231.64583,45231.72917,BEFORE PART: Confirmed fault with Chris. Replicated fault. Ran uEFI Diags. Approved by Customer. Unknown Updated BIOS. Updated Firmware. Correct Part on hand :Yes. Advisory Read. Unknown AFTER PART: Replaced Part. Updated BIOS: Yes. Version # or Customer Issue: 01.14.00. Updated Battery Settings: No. Reported Issue Resolved: Yes. New Issue Found: No.Attended site and replicated problem with TouchPad. Upgrade bios still got the same problem. Replace the TouchPad and run diagnostics. Passed. Tested and passed with point and drag test on uefi.,Closed - Posted,PC Problem-APJ-Computing,45231.37569,8-Customer caused Delay,45231.28056,45231.36389,Computing-APJ-NZ_REGIONAL,NZ/ WARR/ NBD/ ONS/  HP EliteBook 840 G8 Notebook PC (19/ Touchpad issue,5CG12898M0,HP EliteBook 840 G8 Notebook PC (19X35AV),9810,Blair Willers - DTSL
+5114020502,WO-023250603,ABS,45229.51211,45231.64583,Stephen Cook,45231.72917,45230.72917,45231.64583,45231.72917,"Onsite, verified SN and replaced Mainboard for blown component near battery connector (see notes images). Configured DMI and final tested.  Required bitlocker key, entered, then did auto BIOS update. Had to enter BL key twice more then finally loaded OS, and tested ok.",Closed - Posted,PC Problem-APJ-Computing,45231.38578,0-Response Met,45231.3483,45231.43163,Computing-APJ-NZ_WELLINGTON,NZ/ CNBD/ NBD/ ONS/ HP EliteBook 650 G10/ No Power,5CD336DP8P,HP EliteBook 650 15.6 inch G10 Notebook PC IDS Base Model,5040,Blair Willers
+5114096914,WO-023266400,Daniel Gage,45230.5114,45232.6875,Elliot Loveday,45231.72917,,45232.6875,45231.72917,"I confirmed the issue when user showed me 
+Usb c very sensitive to movment and signal would drop 
+Also very slow to charge 
+Replaced main baord and this fixed the issue ",Closed - Posted,PC Problem-APJ-Computing,45231.38611,8-Customer caused Delay,45231.35417,45230.39583,Computing-APJ-NZ_AUCKLAND CENTRAL,Relog of 5111021834//NZ/ CNBD/ NBD/ ONS/ HP EliteBook 840 14 inch G9/ Usb C Port Issue,5CG3080WP9,HP EliteBook 840 14 inch G9 Notebook PC (4B855AV),1010,Blair Willers
+5114026402,WO-023265694,Wellington College - TELA,45230.37443,45231.64583,Rinosh Thomas,45231.72917,45230.72917,45231.64583,45231.72917,"Onsite, confirmed serial
+Confirmed unit not turning on
+Power light blinking continiously and light on the power switch
+Nothing on the display.
+Did power drain with out cmos battery. Unit turning on now.
+Bios was not up to date, updated it.",Closed - Posted,PC Problem-APJ-Computing,45231.39267,0-Response Met,45231.38409,45231.46742,Computing-APJ-NZ_WELLINGTON,TELA/NZ/ WARR/ NBD/ ONS/ HP EliteBook 840 G7 / SCM :: Laptop will not power on,5CG0437ZH8,HP EliteBook 840 G7 Notebook PC,6021,Blair Willers
+5113867177,WO-023219886,JBHIFI    CRAIGIEBURN   ,45225.66475,45237.72917,AUA-EEG-PR-Bench-APCD,45237.72917,,45237.72917,45237.72917,"- Performed power drain
+- Powered on OK 
+- Booted to Windows OK
+- Battery charging ok.
+- UFEI(Ver8.4) test passed. 
+- Cleaned Laptop 
+
+Post windows environment checklist-
+
+- Boot into windows (Passed)
+- USB ports	    (Passed)
+- Sound		    (Passed)
+- WIFI	            (Passed)
+- Keyboard	    (Passed)
+- Touchpad	    (Passed)
+- Battery	    (Passed)
+- Service
+
+================================================
+
+HP PC Hardware Diagnostics UFEI Test result from QR code
+
+Model: HP Laptop 15s
+Serial Number: 5CD1433LTQ
+Product ID: 50R82PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-11-01 09:17:16   Battery              Passed     NA
+2023-11-01 09:16:05   System [F-1]         Passe",Closed - Posted,Depot Repair,45231.39573,0-Response Met,45231.37411,45231.37411,Computing-APJ-AU-VIC_METRO NORTH,AU/ WARR/ ACG/ NBD/ PURR/ HP 15s-eq1000 Laptop PC (8WQ33AV)/ Boot issue/Solvup:- 8929015,5CD1433LTQ,HP 15s-eq1000 Laptop PC (8WQ33AV),3064,Riley Burns
+5109686988,WO-022397602,Dept of Health - IMTS,45154.62458,45231.72917,AUA-EEG-PR-PSGAWAONSITE,45231.72917,45149.72917,45231.72917,45231.72917,attended site. cmos battery has lost it's adhesive. found some tape to stick i t down again. issue resolved.,Closed - Posted,PC Problem-APJ-Computing,45231.39583,7-Subcase recd late from Call Center,45231.36806,45231.36806,Computing-APJ-AU-TAS_REGIONAL,AU/ CNBD/ NBD/ ONS/  HP ProBook 430 G8 Notebook PC (2V656AV) / RATTLE SOUND,5CD112MJMH,HP ProBook 430 G8 Notebook PC (2V656AV),7000,Allan Dixon
+5110493140,WO-022527187,John Wilson,45166.45833,45168.64583,NZA-PR-DTSL-Bench,45168.72917,,45168.64583,45168.72917,"14/09 Confirmed with UEFI diagnostics and checked in Windows that the Webcam does not work. Opened the unit and reseated the cables but did not resolve the issue. Removed the bezel and found out the webcam connector is corroded. Called CEA and Pavitra advised they would quote customer for Webcam, Webcam cable and bezel.18/09  Emailed photos of the unit to Pavithra as customer is blaming the technician for the liquid damage on Webcam connector under the bezel.24/10  open unit and removed corrosion from connector camera cable, inspected lead wire already peeled off...this unit is awaiting cable31/10 MO-700971560 N03213-001 Bezel already arrived...  unit still awaiting cable kit..... review parts and ordered from CEA Tom N39029-001SPS-CABLE KIT LCD...... (back ordered N03218-001SPS-CABLE KIT does not have webcam cable)SPS-CABLE KIT LCD01/11 Replaced LCD cable, Webcam and BZEL. Passed all tests.  Confirmed both Webcam cable and Webcam faulty. Replaced Webcam cable first web cam not detected In HP UEFI test. Replaced Web Cam and issues resolved.",Closed - Posted,Depot Repair,45231.40069,2-Parts Issue,45231.21042,45231.29375,Computing-APJ-NZ_WELLINGTON,NZ/ WARR/ NBD/ CARRY IN/ HP EliteBook 650 15.6 inch G10/ Webcam issue,5CD32733FD,HP EliteBook 650 15.6 inch G10 Notebook PC IDS Base Model,6011,Blair Willers - DTSL
+5113855840,WO-023218332-1,Spotswood College - TELA,45229.39061,45231.64583,NZA-PR-DTSL-Onsite,45231.72917,45226.72917,45231.64583,45231.72917,"WRK-ONSITE. BEFORE PART: Confirmed fault with Andrew. Replicated fault. Ran uEFI Diags. Approved by Customer. Unknown Correct Part on hand: No. AFTER PART: Updated BIOS: No. Updated Battery Settings: No. Reported Issue Resolved: No. New Issue Found: No. Error, Beep Codes, LEDs or Failure ID.Failure Code: Camera not shown and internal Mic not shown. Troubleshooting – Minimum Config. Identified Part at Fault Part Suspected: Motherboard. Call CE Assist spoke with Nitin. Requested Parts: motherboard.",Closed - Posted,PC Problem-APJ-Computing,45231.40069,8-Customer caused Delay,45231.33819,45231.42153,Computing-APJ-NZ_REGIONAL,NZ/  TELA/ WARR/ NBD/ ONS/ 389D0PA/ Fault: Camera not found,5CG1192RK2,HP EliteBook 840 G8 Notebook PC (19X35AV),4310,Blair Willers - DTSL
+5107587515,WO-022384351,JBHIFI FOUNTAIN  GATE,45153.38632,45154.33333,AUA-EEG-PR-Bench-APCD,45154.33333,,45154.33333,45154.33333,"- confirm the unit received with display related issue: CID
+- Replaced LCD, LCD back cover, top cover, base and touch pad, examined the display quality: OK.
+- Post repair checklist has been done.
+- Unit has been cleaned and the repair has been completed.
+
+
+Post Windows environment checklist done:
+
+- Boot into Windows: Passed.
+- USB Ports: Passed.
+- Sound: Passed.
+- Wifi: Passed.
+- Keyboard: Passed.
+- Touch Pad: Passed.
+- Battery Charging: Passed.
+
+		
+================================================
+HP PC Hardware Diagnostics UEFI test result from QR Code:
+
+Model: HP Pavilion x360 2-in-1 Laptop 14-ek0xxx
+Serial Number: 8CG22913RD
+Product ID: 6Q0K7PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 15:44:34   Touch Screen [P]     Passed     NA
+2023-10-31 15:44:29   Webcam [Con]         Passed     NA
+2023-10-31 15:44:21   Mouse [P]            Passed     NA
+2023-10-31 15:33:22   Mouse [P]            Canceled   NA
+2023-10-31 15:33:10   Keyboard             Passed     NA
+2023-10-31 15:33:03   Fingerprint Reader   Passed     NA
+2023-10-31 15:32:56   Power                Passed     NA
+2023-10-31 15:32:50   Audio [P]            Passed     NA
+2023-10-31 15:27:11   System [F-1]         Passed     NA
+
+<END>",Closed - Posted,Depot Repair,45231.40405,0-Response Met,45230.63608,45230.63608,Computing-APJ-AU-VIC_METRO SOUTH EAST,AU/ Q3BD/ TRADE/ 3BD/ ONS/  HP Pavilion x360 14 inch 2-i/ Damage---,8CG22913RD,HP Pavilion x360 14 inch 2-in-1 Laptop P,3805,Riley Burns
+5113798457,WO-023205110,JBHIFI STRAND ARCADE,45224.70203,45239.72917,AUA-EEG-PR-Bench-APCD,45239.72917,,45239.72917,45239.72917,"- Have performed hardware system test: all pass.
+- Suspected the issue was software/operating system/drivers related.  
+- The case record indicated that the data backup disclaimer has been given.
+- Have then re-installed Windows and enabled out of box experience (OOBE) successfully.  
+- Post repair checklist has been done and the repair has been completed.
+
+
+Post Windows environment checklist done:
+
+- Boot into Windows: Passed.
+- USB Ports: Passed.
+- Sound: Passed.
+- Wifi: Passed.
+- Keyboard: Passed.
+- Touch Pad: Passed.
+- Battery Charging: Passed.
+
+		
+================================================
+HP PC Hardware Diagnostics UEFI test result from QR Code:
+
+Model: HP ENVY x360 Convertible 15-ed1xxx
+Serial Number: CND2012B7B
+Product ID: 50R76PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-11-01 10:37:08   Touch Screen [P]     Passed     NA
+2023-11-01 10:37:01   Webcam [Con]         Passed     NA
+2023-11-01 10:36:55   Mouse [P]            Passed     NA
+2023-11-01 10:36:43   Keyboard             Passed     NA
+2023-11-01 10:36:30   Audio [P]            Passed     NA
+2023-11-01 10:35:42   System [F-1]         Passed     NA
+
+<END>",Closed - Posted,Depot Repair,45231.40466,0-Response Met,45230.57472,45230.57472,Computing-APJ-AU-NSW_METRO CBD,AU/ WARR/ NBD/ PURR/ HP ENVY x360 Convertible Laptop PC 15-ed1000 / Boot-up issue/Solvup/8925198,CND2012B7B,HP ENVY x360 Convertible Laptop PC 15-ed1000 (169W7AV),2000,Riley Burns
+5113655415,WO-023171940-1,Mansfield High School,45226.61787,45223.77083,Tom Wold,45223.72917,45223.72917,45223.77083,45223.72917,Attended site disassembled unit replaced topcpver reassembled and the unit was working ,Closed - Posted,PC Problem-APJ-Computing,45231.40556,2-Parts Issue,45231.40486,45231.36319,Computing-APJ-AU-QLD_South,AU/ CNBD/ NBD/ ONS/ HP ProBook x360 435 G7 Notebook PC/ SCM: Rubber Feet Issue,5CG1015CMY,HP ProBook x360 435 G7 Notebook PC (8RA64AV),4122,James Wehl
+5113795942,WO-023205733,Fire & Rescue - NSW,45224.73139,45231.72917,AUA-EEG-PR-PSGAWAONSITE,45231.72917,45225.72917,45231.72917,45231.72917,v/f replaced system board & tested ok customer happy,Closed - Posted,PC Problem-APJ-Computing,45231.40625,8-Customer caused Delay,45231.36458,45231.36458,Computing-APJ-AU-NSW_REGIONAL,AU/ CNBD/ NBD/ ONS/ HP Elite x2 G8 Tablet IDS Base Model/ NO POWER,CND31911YW,HP Elite x2 G8 Tablet IDS Base Model,2444,Allan Dixon
+5113662765,WO-023186533,Joanne JORDAN,45223.36575,45233.77083,AUA-EEG-PR-Bench-APCD,45233.72917,,45233.77083,45233.72917,"- confirm the unit received with display related issue.
+- Replaced LCD, examined the display quality: OK.
+- Post repair checklist has been done.
+- Unit has been cleaned and the repair has been completed.
+
+Post Windows environment checklist done:
+
+- Boot into Windows: Passed.
+- USB Ports: Passed.
+- Sound: Passed.
+- Wifi: Passed.
+- Keyboard: Passed.
+- Touch Pad: Passed.
+- Battery Charging: Passed.
+
+		
+================================================
+HP PC Hardware Diagnostics UEFI test result from QR Code:
+
+
+Model: HP ENVY x360 2-in-1 Laptop 15-ey0xxx
+Serial Number: CND23724HK
+Product ID: 6W4J3PAR#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-10-31 16:36:24   Touch Screen [P]     Passed     NA
+2023-10-31 16:36:18   Webcam [Con]         Passed     NA
+2023-10-31 16:36:11   Mouse [P]            Passed     NA
+2023-10-31 16:35:58   Keyboard             Passed     NA
+2023-10-31 16:35:40   Audio [P]            Passed     NA
+2023-10-31 16:35:15   Processor            Passed     NA
+2023-10-31 16:28:33   System [F-1]         Passed     NA
+2023-09-21 10:51:18   Battery              Passed     NA
+2023-09-21 10:47:38   System [F-2]         Canceled   NA
+2023-09-21 10:44:07   System [F-1]         Passed     NA
+
+<END>",Closed - Posted,Depot Repair,45231.40627,0-Response Met,45230.32639,45230.28472,Computing-APJ-AU-QLD_Gold Coast North,AU/ WARR/ 3BD/ PURR/  HP ENVY x360 15.6 inch / BLANK SCREEN,CND23724HK,HP ENVY x360 15.6 inch 2-in-1 Laptop PC 15-ey0000 (54J84AV),4214,Riley Burns
+5113415574,WO-023123985,Mansfield High School,45217.67007,45218.77083,Tom Wold,45218.72917,45218.72917,45218.77083,45218.72917,Attended site disassembled unit replaced base and battery reassembled and tested to desktop okay.,Closed - Posted,PC Problem-APJ-Computing,45231.40755,2-Parts Issue,45231.40685,45231.36519,Computing-APJ-AU-QLD_South,AU/ CNBD/ NBD/ ONS/ HP ProBook x360 435 G7 Notebook PC/ SCM : Battery is draining very fast and rubber feet has came off,5CG10245B3,HP ProBook x360 435 G7 Notebook PC (8RA65AV),4122,James Wehl
+5113859120,WO-023218089,Harvey Norman (DERNI Pty Ltd)   ,45225.54046,45231.35418,AUA-EEG-PR-MPS Elite Print Solutions,45231.31251,,45231.35418,45231.31251,"MO-701061830 	5851-6712 	Kit-FIPS HDD 500GB
+
+Attended onsite
+Replaced faulty HDD
+Loaded firmware
+Tested okay
+
+Issue resolved
+",Closed - Posted,Printer Problem-APJ-dMPS,45231.41031,8-Customer caused Delay,45231.36865,45231.32698,MPS-APJ-AU-QLD_REGIONAL,A3 - AU/MPS/NBD/P/HP Color LaserJet Mngd E77830dn+ Prntr/ hard drive failure ALSO TURN ON N OFF AFTER THAT SAME ISSUE.,CNC1LCL03Q,HP Color LaserJet Managed MFP E77830dn Plus - Bundle Product 30 ppm,4405,Tony Neal
+5114028295,WO-023265805,Electrix Ltd,45230.39324,45231.64583,Elias Ravillas,45231.72917,,45231.64583,45231.72917,20231101 Verified USB-C port don't output to external monitors. Replaced mainboard. Twitted USB-C ports now works ok on external monitors. All functions tested ok. ,Closed - Posted,PC Problem-APJ-Computing,45231.4105,0-Response Met,45231.39436,45231.4777,Computing-APJ-NZ_AUCKLAND CENTRAL,CRM/NZ/WARR/ONS/HP EliteBook 840 G6/Faulty Thunderbolt port,5CG9401T0L,HP EliteBook 840 G6 Notebook PC IDS Base Model,1060,Blair Willers
+5113417580,WO-023121777,suez,45217.49786,45222.72917,Jordan Palmieri,45222.72917,45222.72917,45222.72917,45222.72917,"LCD panel replaced
+Tested and confirmed no line across top portion of screen.
+Rebooted and tested again to confirm.",Closed - Posted,PC Problem-APJ-Computing,45231.41079,3-No CE Resources Available,45231.38925,45231.38925,,AU/ CNBD/ NBD/ ONS/ HP EliteBook 840 14 inch G10 Notebo/ Dead Pixel Line,5CG32523S8,HP EliteBook 840 14 inch G10 Notebook PC (6V5W6AV),2153,Rahul Bajaj
+5112565827,WO-022954385,Jonathan Marshal,45203.56001,45231.64583,NZA-PR-DTSL-Onsite,45230.6875,,45231.64583,45230.6875,"Replaced the fan, seems the desktop not making noise anymore.",Closed - Posted,PC Problem-APJ-Computing,45231.41181,2-Parts Issue,45231.30764,45230.34931,Computing-APJ-NZ_AUCKLAND CENTRAL,MO-Onsite - Faulty System Fan,8CQ22401BX,HP Pavilion All-in-One PC 27-d0000i (7RC38AV),2120,Blair Willers - DTSL
+5113859286,WO-023232477,Iona College QLD,45226.52,45229.77083,Paul Sajko,45229.72917,,45229.77083,45229.72917,Atteded site and replaced the damaged topcover and lcd. Tested ok in windows,Closed - Posted,PC Problem-APJ-Computing,45231.41406,3-No CE Resources Available,45231.39668,45231.35501,Computing-APJ-AU-QLD_East,AU/ CNBD/ ADP LITE/ NBD/ ONS/ 58G33AV/ ADP SCREEN /  TOP COVER/  LCD BACK COVER,5CG24013FK,HP Pro x360 435 13.3 inch G9 Notebook PC,4178,James Wehl
+5113663111,WO-023207703,HARVEY NORMAN FORTITUDE VALLEY COMPUTERS,45224.80174,45237.77083,AUA-EEG-PR-Bench-APCD,45237.72917,,45237.77083,45237.72917,"Issues we found  -   
+
+- LCD back cover, LCD panel and hinge cap is damaged due to faulty hinges 
+
+Solution we made  -     
+
+- Replaced LCD back cover and LCD panel. (Tested)
+- Replaced hinges with hinge cap. (Tested) 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Touch Screen          (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+Model: HP ENVY x360 Convertible 15-ee1xxx
+Serial Number: CND1352FMN
+Product ID: 49P13PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-11-01 09:43:42   Touch Screen [P]     Passed     NA
+2023-11-01 09:43:38   Wireless Module      Passed     NA
+2023-11-01 09:43:25   Keyboard             Passed     NA
+2023-11-01 09:43:21   Bluetooth Module     Passed     NA
+2023-11-01 09:43:16   Audio [P]            Passed     NA
+2023-11-01 09:39:34   System [F-1]         Passed     NA
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.41426,0-Response Met,45231.3372,45231.29553,Computing-APJ-AU-QLD_Inner North,AU/ WARR/ ACG/ 2BD/ PURR/ HP ENVY x360 15.6 inch 2-in-1 Laptop PC/ Hinge Issue,CND1352FMN,HP ENVY x360 15.6 inch 2-in-1 Laptop PC 15-ee1000 (2E2K9AV),4006,Riley Burns
+5109470658,WO-022349884,PC Rentals,45149.56218,45233.64583,NZA-PR-DTSL-Bench,45233.72917,,45233.64583,45233.72917,"04/08 did power wash by removing battery and memory and pressing power button for 30 sec. Unit booted fine afterwards. Leaving unit on testing07/08 - did power wash, unit booted up fine. was under testing for couple days, device is working fine. checked and tested found cu was using low Watt adaptor. checked it with correct adaptor. its booting fine.  01/11 replaced fan  due to making loud sound and run windows diagnostic, all components tested ok. hp report shows 2 parts but only received 1 only",Closed - Posted,PC Problem-APJ-Computing,45231.41458,3-No CE Resources Available,45231.26319,45231.34653,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ Q3BD/ TRADE/ 3BD/ ONS/  HP ZBook 15 G4 Mobile Workstation/ Fan Noisy,CND7514Q1T,HP ZBook 15 G4 Mobile Workstation (ENERGY STAR),1061,Blair Willers - DTSL
+5113928867,WO-023235488,Harvey Norman (DERNI Pty  Ltd),45226.72525,45229.77083,AUA-EEG-PR-MPS Elite Print Solutions,45229.72917,,45229.77083,45229.72917,"Only ADF Whole Unit Workflow used
+
+Attended onsite
+ADF was making a noise during feed
+Replaced entire ADF
+Tested ADF
+All tested okay
+
+Issue resolved
+",Closed - Posted,Printer Problem-APJ-dMPS,45231.41697,2-Parts Issue,45231.3753,45231.33363,MPS-APJ-AU-QLD_REGIONAL,AU/MPS/NBD/P/HP Color LaserJet MngdFlwMFPM577cm Prntr/Error: Making loud noises and printing dirty,CNBXJ7HFWT,HP Color LaserJet Managed Flow MFP M577c,4870,Tony Neal
+5113018800,WO-023066859-1,Southland Boys' High School - TELA,45219.35521,45231.64583,NZA-PR-DTSL-Onsite,45231.72917,45211.72917,45231.64583,45231.72917,Attended site and replicated problem with not power on. Tried with minimal configuration still not starting. Replaced the motherboard and updated DMI. Run diagnostic and passed. Customer upgrade bios by himself. Everything working fine.,Closed - Posted,PC Problem-APJ-Computing,45231.41736,2-Parts Issue,45231.37569,45231.45903,Computing-APJ-NZ_REGIONAL,TELA/NZ/ WARR/ NBD/ ONS/ HP EliteBook 840 G8/ SCM: Device won't power on,5CG2223YX1,HP EliteBook 840 G8 Notebook PC (19X35AV),9810,Blair Willers - DTSL
+5113419069,WO-023122030,Omnicommedia Group,45217.52655,45231.72917,Patrick Owens,45231.72917,,45231.72917,45231.72917,"Key missing, topcover replaced, tested ok ",Closed - Posted,PC Problem-APJ-Computing,45231.41744,3-No CE Resources Available,45231.37608,45231.37608,Computing-APJ-AU-NSW_METRO STH SYD,AU/ WARR/ NBD/ ONS/ HP EliteBook 840 G8/ Keyboard Issue,5CG213761M,HP EliteBook 840 G8 Notebook PC (19X36AV),2015,Rahul Bajaj
+5114102626,WO-023267820,Prairiewood High School,45230.62581,45231.72917,BRAD PARKER,45231.72917,45231.6875,45231.6875,45231.6875,Replaced the battery tested and working ,Closed - Posted,PC Problem-APJ-Computing,45231.41751,0-Response Met,45231.38951,45231.38951,Computing-APJ-AU-NSW_METRO SSW,SPDEC-2/AU//CNBD/ONS/HP ProBook 430 G7/HP Battery Alert,5CD0512KN9,HP ProBook 430 G7 Notebook PC (6YX11AV),2176,Rahul Bajaj
+5112634409,WO-022955401,DHL Supply Chain Australia Pty Ltd,45203.64713,45223.72917,MOHAMMED DEAN,45223.72917,45204.72917,45223.72917,45223.72917,Parts replaced tested ok ,Closed - Posted,PC Problem-APJ-Computing,45231.42341,2-Parts Issue,45231.38106,45231.38106,Computing-APJ-AU-NSW_METRO SW,AU/ Q3BD/ TRADE/ 3BD/ ONS/ HP EliteBook 850 G8 Notebook PC / Top cover damage(relog for 5111576774),5CG24173QX,HP EliteBook 850 G8 Notebook PC IDS Base,2178,Rahul Bajaj
+5113793534,WO-023246454,Fisheye,45227.68119,45230.64583,Rence Cayanan,45230.72917,45225.72917,45230.64583,45230.72917,Verified SN and issue. SSD failing the storage test. Replaced and installed new ssd and ran test again. Results all passed,Closed - Posted,PC Problem-APJ-Computing,45231.42358,2-Parts Issue,45231.41155,45231.49488,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ CNBD/ NBD/ ONS/  HP Elite Mini 800 G9 Desktop PC/ HARD DRIVE FAULTY,8CC2461RBW,HP Elite Mini 800 G9 Desktop PC (550B4AV),1011,Blair Willers
+5113022720,WO-023034377,Nick Nilakis/david tran,45210.51731,45231.72917,Paulo Rangel,45231.72917,45211.72917,45231.72917,45231.72917,Replaced only top cover and tested ok.,Closed - Posted,PC Problem-APJ-Computing,45231.42657,2-Parts Issue,45231.40715,45231.40715,Computing-APJ-AU-VIC_METRO CITY,AU/ Q3BD/ TRADE/ 3BD/ ONS/ HP ProBook 630 G8 Notebook PC (2M026AV)/ Top cover and hinge damage,5CD147FJK8,HP ProBook 630 G8 Notebook PC (2M026AV),3207,Senthil Kumar Swaminathan
+5113856413,WO-023231049,Teamwork Technology,45226.29697,45230.72917,AUA-EEG-PR-IPGAWAALL,45230.72917,45226.72917,45230.72917,45230.72917,"attended site. cx explained several issues - mainly network dropping out and unable to scan. checked event logs - multiple network errors. forced network t o 100 from auto. contacted ce assist to confirm errors and possible fw updates. cea not available. job waiting on call back from ce assist. advised by sikkandar at hp: as per the previous conversation with onsite ce, p rinter is working, and unit was kept under observation.",Closed - Posted,Print Problem-APJ-Printing,45231.42708,2-Parts Issue,45231.38542,45231.38542,Printing-APJ-AU-NSW_NEWCASTLE,AU/ CNBD/ NBD/ ONS/ HP Color LaserJet Pro MFP 4301fdw Printer/ Error:-59.F0,CNBRR6G4YC,HP Color LaserJet Pro MFP 4301fdw Printer,2289,Allan Dixon
+5113860887,WO-023221951-1, Iona College QLD,45225.81821,45229.77083,Paul Sajko,45229.72917,,45229.77083,45229.72917,"Verfied lcd issue, replaced faulty lcd have tested ok in windows after repair. ",Closed - Posted,PC Problem-APJ-Computing,45231.42721,2-Parts Issue,45231.4161,45231.37443,Computing-APJ-AU-QLD_East,PIN 85759//AU/ CNBD/ NBD/ ONS/  HP Pro x360 435 13.3 inch G9 Notebook / webcam,5CG2263N4Q,HP Pro x360 435 13.3 inch G9 Notebook PC (58G33AV),4178,James Wehl
+5114103158,WO-023268448,Mountain View Adventist College,45230.66579,45231.72917,PRAKASH PATEL,45231.72917,45219.72917,45231.72917,45231.72917,Replaced new touchpad cable. Now unit is working ok. ,Closed - Posted,PC Problem-APJ-Computing,45231.42804,0-Response Met,45231.41277,45231.41277,Computing-APJ-AU-NSW_METRO NW,AU/ CNBD/ ADP LITE/ NBD/ ONS/ HP ProBook x360 11 G7 EE/ damaged unit,5CG145B03D,HP ProBook x360 11 G7 Education Edition (2M0K4AV),2767,Rahul Bajaj
+5113347276,WO-023105656,Mohammad Hassain,45216.61005,45231.64583,NIKHIL RABADIA,45231.72917,,45231.64583,45231.72917,"Camera not attached
+Doesn't show in diagnostics or my windows
+Reset cables no go
+Replaced camera no go
+Tried to get screen apart one side tape not visible and other one kept cracking amd now no longer accessible
+Can't crack screen as user is using laptop and has no spare. 
+
+Asked hp support to order display HU or Display and Hubboard in follow up WO
+
+
+
+Parts arrived 6 nov 23 due to s4 system updates 
+Replaced camera no go 
+Screen cracked while pulling the tape out as it was invisible had to pull out to access the tapes 
+Replaced hubboard board no go
+Replaced cable from. System board to hub board no go 
+Replaced cable for hub board to camera Verified Ok in bios diagnostics and windows 
+Ran diagnostics all passed 
+User happy 
+Asked user to monitor and update if issue reoccurrs 
+",Closed - Posted,PC Problem-APJ-Computing,45231.42831,8-Customer caused Delay,45231.38248,45231.46581,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/ HP ZBook Firefly 15.6 inch G8 Mobile Wor/ Webcam issue,5CG1408S9V,HP ZBook Firefly 15.6 inch G8 Mobile Workstation PC (1G3U2AV),1060,Blair Willers
+5112953341,WO-023057731-1,DHL Global Forwarding,45223.60656,45231.72917,MUHAMMED CHOWDHURY,45231.72917,45210.72917,45231.72917,45231.72917,Replace power button board and cable fix the issue ,Closed - Posted,PC Problem-APJ-Computing,45231.42844,8-Customer caused Delay,45231.40348,45231.40348,Computing-APJ-AU-NSW_METRO EAST,AU/ CNBD/ NBD/ ONS/  HP EliteBook 840 G6 Notebook PC/ no power,5CG952B1DD,HP EliteBook 840 G6 Notebook PC,2036,Rahul Bajaj
+5113031206,WO-023036911,JBHIFI HOME MILE END,45210.66316,45212.35417,AUA-EEG-PR-Bench-APCD,45212.33333,,45212.35417,45212.33333,"The unit has a cracked LCD panel.
+
+Replaced the LCD panel. tested OK
+
+Post-repair checklist passed with display, keyboard, touchpad, wifi, audio, webcam, and battery charging. 
+Machine clean and dispatched.
+===========================================================================================
+HP PC Hardware Diagnostic UEFI test result from QR code
+
+Model: HP Pavilion x360 Convertible 14-dy1xxx
+Serial Number: 8CG2361DBY
+Product ID: 76N20PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-11-01 10:02:17   System [F-1]         Passed     NA
+2023-11-01 10:02:08   Wireless Module      Passed     NA
+2023-11-01 10:01:57   Mouse [P]            Passed     NA
+2023-11-01 10:01:29   Keyboard             Passed     NA
+2023-11-01 10:01:06   Audio [P]            Passed     NA
+2023-11-01 10:00:50   Power                Passed     NA",Closed - Posted,Depot Repair,45231.43139,0-Response Met,45230.43703,45230.41619,Computing-APJ-AU-SA_METRO WESTERN,AU/ Q3BD/ TRADE/ NBD/ PURR/ HP Pavilion x360 14 Convertible PC/ Display Issue/ Solvup:- 8595333,8CG2361DBY,HP Pavilion x360 14 Convertible PC 14-dy1000 (436S6AV),5031,Riley Burns
+5114102621,WO-023267903,Prairiewood High School,45230.63193,45233.33333,BRAD PARKER,45233.33333,,45233.33333,45233.33333,Replaced the battery tested and working ,Closed - Posted,PC Problem-APJ-Computing,45231.43228,0-Response Met,45231.41909,45231.41909,Computing-APJ-AU-NSW_METRO SSW,SPDEC-2//AU/CNBD/ONS/ AU///HP ProBook 430 G6/ FAULTY BATTERY,5CD024JWJ1,HP ProBook 430 G6 Notebook PC,2176,Rahul Bajaj
+5113935498,WO-023235522,Renu _,45226.72683,45238.72917,AUA-EEG-PR-Bench-APCD,45238.72917,,45238.72917,45238.72917,"- Replaced systemboard
+- Powered on OK 
+- Booted to Windows OK
+- UFEI(Ver8.4) test passed. 
+- Cleaned Laptop 
+
+Post windows environment checklist-
+
+- Boot into windows (Passed)
+- USB ports	    (Passed)
+- Sound		    (Passed)
+- WIFI	            (Passed)
+- Keyboard	    (Passed)
+- Touchpad	    (Passed)
+- Battery	    (Passed)
+- Service
+
+================================================
+
+HP PC Hardware Diagnostics UFEI Test result from QR code
+
+Model: HP ENVY x360 2-in-1 Laptop
+Serial Number: CND251006V
+Product ID: 6X0R3PA#ABG
+CSO Number: 
+Agent ID: 
+================================================
+Start Time            Type                 Result     Failure ID
+-------------------   ------------------   --------   ---------------------------
+2023-11-01 10:11:23   System [F-1]         Passed     NA",Closed - Posted,Depot Repair,45231.43604,0-Response Met,45231.36427,45231.36427,Computing-APJ-AU-NSW_METRO SSW,AU/ WARR/ 2BD/ PURR/ HP ENVY x360 15.6 inch 2-in-1 Laptop PC/ NO POWER,CND251006V,HP ENVY x360 15.6 inch 2-in-1 Laptop PC ,2161,Riley Burns
+5113727051,WO-023186969,personal,45223.47142,45232.72917,JOSHUA BILSON,45232.72917,,45232.72917,45232.72917,"Attended site and replaced faulty fan (vibration)
+Unit then tested ok ",Closed - Posted,PC Problem-APJ-Computing,45231.43727,8-Customer caused Delay,45231.39617,45231.39617,Computing-APJ-AU-QLD_COFFS HARBOUR,AU/ WARR/ NBD/ ONS/ HP ProDesk 405 G6 Desktop Mini PC/ Fan Noise,8CC1253CJT,HP ProDesk 405 G6 Desktop Mini PC (3J458AV),2454,James Wehl
+5113801504,WO-023220835,Personal,45225.71387,45231.72917,AUA-EEG-PR-PSGAWAONSITE,45231.72917,,45231.72917,45231.72917,attended site v/f replaced lcd & send adp photos to hp customer happy,Closed - Posted,PC Problem-APJ-Computing,45231.4375,8-Customer caused Delay,45231.41667,45231.41667,Computing-APJ-AU-NSW_REGIONAL,AU/ CNBD/ ADP/ NBD/ ONS/  HP ProBook x360 11 G6 EE Notebook PC/ Damage,5CG1411L79,HP ProBook x360 11 G6 EE Notebook PC,2444,Allan Dixon
+5113937631,WO-023236578,Edu,45226.7659,45231.875,Maruthi Vuruma,45231.875,,45231.875,45231.875,THE ISSUE IS WITH THE POWER BUTTON : REPLACEDED AND CHECKED WITH NEW MOTHER BOARD SAME ISSES - ASKED FOR POWER BUTTON ON FOLLOW UP,Closed - Posted,PC Problem-APJ-Computing,45231.4375,0-Response Met,45231.41667,45231.41667,Computing-APJ-AU-ACT_METRO South,AU/ WARR/ NBD/ ONS/ HP EliteBook x360 1030 G4 Notebook PC/ No Power,5CD012GL9Q,HP EliteBook x360 1030 G4 Notebook PC,2620,Rahul Bajaj
+5114095267,WO-023266374,ANZ,45230.50729,45231.72917,RONNIE LI,45231.72917,,45231.72917,45231.72917,"1.            Is the issue resolved? Y or N? (if N then describe why in 4.Comments)y
+2.            If resolved, was the symptom the same as originally described? (Y or N) (if N then describe why in 4.Comments)y
+3.            Did you use all the parts? (Y or N) (if N then describe why in 4.Comments)y
+4.            Comments:attend sites confirm there is lines on copies when duplexing,  show customer how to clean the document glass,  general service and cleaning test ok ",Closed - Posted,Printer Problem-APJ-dMPS,45231.43765,0-Response Met,45231.41667,45231.41667,MPS-APJ-AU-NSW_METRO NTH,AU/MPS/NBD/P/HW/HP Officejet Ent Color MFP X585z Prntr/ lines when scanning documents,CN47L4X014,HP OfficeJet Enterprise Color Flow MFP X585z,2077,Rahul Bajaj
+5114021961,WO-023252179,MITRONICS ,45229.64336,45231.35418,AUA-EEG-PR-MPS Elite Print Solutions,45231.31251,,45231.35418,45231.31251,"MO-701092328 	B5L24-69001 	Intermediate Transfer Belt Kit
+Part not used
+
+Attended onsite
+Unable to replicate grinding noise
+Possibly caused by previous empty C cartridge
+Checked ITB - no issues
+Machine calibration normal
+PQ normal
+Cleaned and serviced machine
+Cleaned roller message
+Unable to be cleared
+Escalated CE Assist for firmware update
+Issue not resolved
+Received new WO
+",Closed - Posted,Printer Problem-APJ-dMPS,45231.43778,2-Parts Issue,45231.35444,45231.31278,MPS-APJ-AU-QLD_REGIONAL,AU/MPS/NBD/EM/HW/HP Color LaserJet Ent MFP M577f Prntr/making very loud noises when trying to print this isn’t happening all the time,CNBXJ8S67B,HP Color LaserJet Enterprise MFP M577f,4680,Tony Neal
+5114030986,WO-023252779,Fujitsu House,45229.67626,45231.64583,Azad Singh,45231.72917,,45231.64583,45231.72917,"Printer installation
+Done and tested",Closed - Posted,Installation Only-APJ-Printing,45231.43782,0-Response Met,45231.30588,45231.38921,Printing-APJ-NZ_WELLINGTON,A3 - NZ/DMPS/RM/Installation/E/Re:  Installation Request - New Zealand Public Service Association,5QK08A NOSN,HP Color LaserJet Managed MFP E877z,6011,Blair Willers
+5113922010,WO-023232180,Iona College QLD,45226.48382,45229.77083,Paul Sajko,45229.72917,45229.72917,45229.77083,45229.72917,"Verified fault, replaced lcd, issur still persisting after replacement of the lcd. Have requested MB on follow-up",Closed - Posted,PC Problem-APJ-Computing,45231.43807,3-No CE Resources Available,45231.42487,45231.38321,Computing-APJ-AU-QLD_East,AU/ CNBD/ NBD/ ONS/ HP EliteBook x360 1030 G4 Notebook PC/ Faulty LCD.,5CD0204FSN,HP EliteBook x360 1030 G4 Notebook PC,4178,James Wehl
+5113926891,WO-023234021,Mercy Health & Aged Care,45226.64196,45229.72917,AUA-EEG-PR-MPS Elite Print Solutions,45229.72917,,45229.72917,45229.72917,"
+MO-701077267 	JC44-00250A 	SMPS-V2 RubyX7600,PSPN2 Type5H V2,300W
+Part not used
+
+Attended onsite
+Inspected printer, no errors
+Inspected power source. 
+Printer connected directly to mains.
+Called CE assist 
+Spoke further with customer regarding any further issues with printer
+Customer advised when copying/scanning double sided it will leave markings on page
+David from CE called back 
+David advised not to replace part as error only appeared once. He advised to let customer know to monitor issues.
+Advised David of being onsite for 1hr
+Confirmed fault with double sided copying/scanning issues
+Cleaned both ADF scanner glass.
+Copying/scanning all tested OK
+Tested printer overall, all tested OK
+Advised customer to have power point tested.
+
+",Closed - Posted,Printer Problem-APJ-dMPS,45231.43809,2-Parts Issue,45231.36517,45231.36517,MPS-APJ-AU-NSW_REGIONAL,A3 - AU/MPS/NBD/EM/HW/HP Color LaserJet Mgd Flw E87660z+ Prntr/63.00.21,CNB1KC9096,HP Color LaserJet Managed Flow MFP E87660z Plus - Bundle Product 60 ppm,2594,Tony Neal
+5113032614,WO-023048347-1,Ethan  - IT /  FreeTV Australia,45216.58422,45231.72917,Mina Kasma,45231.72917,,45231.72917,45231.72917,"Replaced hard drive, tested ok.",Closed - Posted,PC Problem-APJ-Computing,45231.43889,3-No CE Resources Available,45231.42801,45231.42801,Computing-APJ-AU-NSW_METRO NTH SYD,AU/ WARR/ NBD/ ONS/ HP EliteBook 840 Aero G8 Notebook PC/ No Power Issue,5CG14481ST,HP EliteBook 840 Aero G8 Notebook PC (2E5E6AV),2060,Rahul Bajaj
+5113866476,WO-023232370,One IT Service,45226.51116,45231.72917,Ankit Giri,45231.72917,45226.72917,45231.72917,45231.72917,"01/11: battery issue/ not charging
+Replaced battery
+Issue resolved after replacement, battery health good, checked with usb c and power adapter, the battery is charging, checked with customer too, test ok -Ankit",Closed - Posted,PC Problem-APJ-Computing,45231.44097,0-Response Met,45231.4367,45231.4367,Computing-APJ-AU-VIC_METRO OUTER CITY,AU/ CNBD/ NBD/ ONS/ HP EliteBook 650 15.6 inch G9 Notebook P/ BATTERY ISSUE,5CD2270YZ6,HP EliteBook 650 15.6 inch G9 Notebook PC (4D165AV),3121,Senthil Kumar Swaminathan
+5113922608,WO-023266057,Hutt Valley High School,45230.43725,45231.64583,Stephen Cook,45231.72917,,45231.64583,45231.72917,"Onsite call, verified SN and fault. Replaced Mainboard for no HDMI output. Replacement Mnbrd xharging but no power on. Rechecked all connectors, did power drain and minimal HW. No change. Logged CEA for DOA replacement.",Closed - Posted,PC Problem-APJ-Computing,45231.44097,0-Response Met,45231.40656,45231.4899,Computing-APJ-NZ_WELLINGTON,NZ/ TELA/ WARR/ NBD/ ONS/ HP EliteBook 840 G8 Notebook PC/ SCM: HDMI Issue,5CG1300HG1,HP EliteBook 840 G8 Notebook PC (19X35AV),5010,Blair Willers
+5114019203,WO-023250152,Redbank Plains State High School,45229.27557,45231.77083,Allan Huynh,45231.72917,45230.72917,45231.77083,45231.72917,"Check and replace lcd screen,  test toych function ok in bios level.  Update system bios to V1.12. 
+Power up to login screen OK. 
+Client to enable touch function in windows. 
+
+Hp ce used hot spare part for onsite service. 
+Request ce assist to action and order the part as part still in recommended status. ",Closed - Posted,PC Problem-APJ-Computing,45231.44109,2-Parts Issue,45231.42068,45231.37902,Computing-APJ-AU-QLD_WEST,DETQ/AU/ /CNBD/ONS/HP ProBook 430 G6/Touch screen issue,5CD02224LD,HP ProBook 430 G6 Notebook PC IDS Base Model,4301,James Wehl
+5113729058,WO-023187562,David Ellis,45223.53972,45236.77083,AUA-EEG-PR-Bench-APCD,45236.72917,,45236.77083,45236.72917,"Issues we found  -   
+
+- No power issue 
+
+Solution we made  -     
+
+- Replaced system board. (Tested) 
+- Updated the BIOS. (Tested) 
+
+Note - Bitlocker has been triggered after motherboard replacement, please follow the enclosed Microsoft Instructions to retrieve your BitLocker key.
+https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6 
+
+Note 02 - Found UID on LCD back cover and top cover but returning the laptop without repairing the UID because the quote is rejected. 
+
+
+Post windows environment checklist -
+
+-  Boot into windows  (Passed)
+-  USB Ports               (Passed)
+-  Sound                     (Passed
+-  WIFI                       (Passed)
+-  Keyboard                (Passed)
+-  Touch pad               (Passed)
+-  Battery Charging     (Passed)
+-  Touch Screen          (Passed)
+-  Service                  (Done)
+
+================================================
+HP PC hardware diagnostics UEFI test results from QR code:
+
+
+
+
+Unit is cleaned & Dispatched.",Closed - Posted,Depot Repair,45231.4422,0-Response Met,45230.37706,45230.33539,Computing-APJ-AU-QLD_Gold Coast North,AU/ WARR/ 2BD/ PURR/ HP ENVY Laptop PC 14-eb0000 (167S1AV)/ no power,5CD1334ZYB,HP ENVY Laptop PC 14-eb0000 (167S1AV),4215,Riley Burns
+5113866443,WO-023220040,TAL,45225.67271,45231.72917,Leonard Mitchell,45231.72917,,45231.72917,45231.72917,"Webcam connection test passed.wecam capture tests not available with pass.
+IT logged me into unit. Image attached camera image greyed out 
+Replaced webcam. Tested ok",Closed - Posted,PC Problem-APJ-Computing,45231.44324,0-Response Met,45231.40875,45231.40875,Computing-APJ-AU-NSW_METRO CBD,AU/ WARR/ NBD/ ONS/   HP EliteBook 850 G8/ SCM:CAMERA,5CG21025ND,HP EliteBook 850 G8 Notebook PC (1G1Y0AV),2000,Rahul Bajaj
+5113168064,WO-023080577,emv,45213.21668,45231.72917,Vita Meekel,45231.72917,45215.72917,45231.72917,45231.72917,"Detecting microphone in Windows but its not recording sound properly
+Tried with voice recorder app, and when i played the recording back it almost made like a slight pop sound at the start and then nothing. Made sure microphone wasnt disabled on the KB
+Not working in diagnostics, but that's not a reliable indicator
+Detecting in BIOS
+Opened device up, no sign of liquid damage or burnt out components
+Tried reseating cable
+Working in voice recorder app now
+Put device back together properly and restarted. Tried voice recording app again, moved screen back and forth while recording
+Still working 
+Tried a teams call with the customer as well
+Still working
+Issue resolved",Closed - Posted,PC Problem-APJ-Computing,45231.44479,8-Customer caused Delay,45231.43159,45231.43159,Computing-APJ-AU-VIC_METRO CITY,AU/ CNBD/ NBD/ ONS/  HP EliteBook 830 G8/ Microphone issue,5CG1445QQH,HP EliteBook 830 G8 Notebook PC IDS Base Model,3000,Senthil Kumar Swaminathan
+5113856926,WO-023217235,Andrew Wotton,45225.4201,45231.64583,NZA-PR-DTSL-Onsite,45231.72917,,45231.64583,45231.72917,"Matched S/N. No CID around. Customer showed images of the fan error received earlier and advised that the device has not made loud fan noise since the past 2-3 days. Tried to replicate fault by doing diagnostics. All tests passed. Replaced fan. Did diagnostics after fan replacement, all tests passed. Booted to windows. No further issues found.",Closed - Posted,PC Problem-APJ-Computing,45231.44514,2-Parts Issue,45231.2875,45231.37083,Computing-APJ-NZ_REGIONAL,NZ/ CNBD/ NBD/ ONS/  HP ProOne 440 23.8 inch G9 / noisy fan,8CN2410CS1,HP ProOne 440 23.8 inch G9 All-in-One Desktop PC (564F8AV),4930,Blair Willers - DTSL
+5111964357,WO-022820926,pratik,45190.67792,45230.64583,Erwin Anthony Volante,45230.72917,45191.72917,45230.64583,45230.72917,"Attend onsite
+Webcam not detected in devixe manager and diags
+Reseat webxam module - no go
+Replace webcam module - ok
+Test mic - user test ok",Closed - Posted,PC Problem-APJ-Computing,45231.44637,10-Unable to reach customer,45231.42375,45231.50708,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ CNBD/ NBD/ ONS/ HP PB440G8/ Webcam and mic issue,5CD145MXMT,HP ProBook 440 G8 Notebook PC (2Q527AV),2110,Blair Willers
+5113089438,WO-023048050,Lily Pasanen,45211.46159,45231.72917,AUA-EEG-PR-PSGAWAONSITE,45231.72917,,45231.72917,45231.72917,#NAME?,Closed - Posted,PC Problem-APJ-Computing,45231.44792,8-Customer caused Delay,45231.39583,45231.39583,Computing-APJ-AU-TAS_REGIONAL,AU/ WARR/ NBD/ ONS/ HP Elite Dragonfly G2 Notebook PC/ Display,5CG137CRPR,HP Elite Dragonfly G2 Notebook PC (1J1P9,7000,Allan Dixon
+5112630196,WO-022967746,Grant Thornton Australia Limited,45204.42427,45204.72917,TERRY SHUE,45204.72917,45204.72917,45204.72917,45204.72917,Replace topcover as cid on key all tested ok ,Closed - Posted,PC Problem-APJ-Computing,45231.44803,2-Parts Issue,45231.41678,45231.41678,Computing-APJ-AU-NSW_METRO CBD,AU/ CNBD/ NBD/ ONS/ HP EliteBook x360 1040 G7 Notebook/ White lines across screens,CND0403XHD,HP EliteBook x360 1040 G7 Base Model Notebook PC,2000,Rahul Bajaj
+5114092856,WO-023266874,Spark ,45230.55547,45231.64583,Rence Cayanan,45231.72917,,45231.64583,45231.72917,Verified SN and issue. Touchpad not working on windows and on bios level. Performed cmos reset and power drain no go. Replaced and installed new touchpad also no go. Suspecting a cable issue ordered a cable kit on a follow up.,Closed - Posted,PC Problem-APJ-Computing,45231.44809,0-Response Met,45231.43698,45231.52031,Computing-APJ-NZ_AUCKLAND CENTRAL,NZ/ WARR/ NBD/ ONS/ HP EliteBook 850 G8 Notebook PC / SCM: Touchpad Issue,5CG21274M2,HP EliteBook 850 G8 Notebook PC IDS Base,1010,Blair Willers
+5114063667,WO-023266429,BUNNINGS GROUP LIMITED,45230.51412,45231.72917,Mark Louis Jimenez,45231.72917,45231.72917,45231.72917,45231.72917,requires exit delivery assy. general service and tested ok ,Closed - Posted,Print Problem-APJ-Printing,45231.44821,0-Response Met,45231.41696,45231.41696,Printing-APJ-AU-VIC_METRO EAST,HP | 6118ILRN1A | Error: 13.B9.A5 | Paper is crinkling upon print out//SCM PLUS/ AU/ CNBD/ NBD/ ONS/ HP LaserJet Managed MFP E52645dn/ 13.B9.A5 | Paper is crinkling,CNCKN2K27P,HP LaserJet Managed MFP E52645dn,3116,Senthil Kumar Swaminathan
+5113858953,WO-023217883,Darin McKay,45225.52336,45226.77083,Duane Dingley,45226.72917,45226.72917,45226.77083,45226.72917,Replaced LCD assembly. Tested booting to OS and screen use. All OK. ,Closed - Posted,PC Problem-APJ-Computing,45231.44993,2-Parts Issue,45231.43597,45231.39431,Computing-APJ-AU-QLD_MAROOCHYDORE South,AU/ CNBD/ NBD/ ONS/  HP ProBook x360 11 G6 EE Noteboo/ No display on laptop screen.,5CG1429HZ0,HP ProBook x360 11 G6 EE Notebook PC,4551,James Wehl
