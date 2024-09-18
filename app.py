@@ -10,7 +10,7 @@ import re
 import pandas as pd
 import logging
 import math
-
+from pathlib import Path
 # Set up logging for debugging
 logging.basicConfig(level=logging.DEBUG)
 
@@ -32,36 +32,80 @@ textgen_config = TextGenerationConfig(n=1, temperature=0.5, model="gpt-4o", use_
 # Set up page config for chatbot layout
 st.set_page_config(page_title="HPVizionary", layout="wide")
 
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+
+def img_to_html(img_path):
+    img_html = "<img src='data:image/png;base64,{}' width='100' class='logo'>".format(
+        img_to_bytes(img_path)
+    )
+    return img_html
+
+# Path to your image
+image_path = 'hplogo.png'
+
+# Get the base64 image HTML
+image_html = img_to_html(image_path)
+
+html_code = f"""
+    <div style="display: flex; flex-direction:column; align-items: center; justify-contents:center; margin-bottom:40px">
+        {image_html}
+        <h1 style="font-size: 20px; margin: 0; position:absolute; top:40px ">HP Vizionary <span>MVP</span></h1>
+    </div>
+    """
+
+st.sidebar.markdown(html_code, unsafe_allow_html=True)
+
 # Custom CSS to style the entire file uploader, send button, and the bot icon
 st.markdown(
     """
     <style>
+       @import url('https://fonts.google.com/share?selection.family=Rubik:ital,wght@0,300..900;1,300..900');
+
+    html, body {
+        font-family: 'Rubik', sans-serif;
+    }
+
     .stFileUploader {
-        background-color:#80AEDF!important;
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
         border-radius: 10px;
         padding: 20px;
     }
 
     .stFileUploader label {
-        background-color: #80AEDF!important;
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
         border: none !important;
     }
 
     div.stTextInput > div > div > button {
-        background-color: #80AEDF !important;
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
     }
 
-    .center-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 20px;
+    [data-testid="stSidebarHeader"] {
+        display: none;
     }
+
+    [data-testid="stMarkdownContainer"] p {
+    font-size: 16px;
+    font-weight: bold;    
+    }
+
+     [data-testid="stMarkdownContainer"] h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align:center;
+        font-family: 'Rubik', sans-serif;     
+    }
+
+    [data-testid="stSidebarContent"] {
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     </style>
     """, unsafe_allow_html=True
 )
@@ -127,7 +171,7 @@ if "history" not in st.session_state:
 
 # Sidebar for file upload and API key entry
 with st.sidebar:
-    st.title('💬 Dashboard')
+    st.write('Dashboard')
 
     # File uploader for CSV files with blue box and white text
     uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
@@ -138,12 +182,17 @@ with st.sidebar:
         st.write("Preview of the dataset:")
         st.dataframe(df)
 
-# Display the title, logo, and "Powered by" text centered on the screen
-st.markdown('<div class="center-content">', unsafe_allow_html=True)
-st.image("hplogo.png", width=150)  # Adjust the logo width if necessary
-st.markdown("<h1 style='font-size: 48px; color: #0096D6;'>HPVizionary</h1>", unsafe_allow_html=True)
-st.markdown("<h3>Powered by Avrox</h3>", unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
+# def img_to_bytes(img_path):
+#     img_bytes = Path(img_path).read_bytes()
+#     encoded = base64.b64encode(img_bytes).decode()
+#     return encoded
+# def img_to_html(img_path):
+#     img_html = "<img src='data:image/png;base64,{}' class='logo'>".format(
+#       img_to_bytes(img_path)
+#     )
+#     return img_html
+
+# st.markdown(img_to_html('hplogo.png'), unsafe_allow_html=True)
 
 # Input for user query
 prompt = st.chat_input("Ask a question or request a visualization")
