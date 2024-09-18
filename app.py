@@ -11,6 +11,7 @@ import pandas as pd
 import logging
 import math
 from pathlib import Path
+
 # Set up logging for debugging
 logging.basicConfig(level=logging.DEBUG)
 
@@ -32,11 +33,13 @@ textgen_config = TextGenerationConfig(n=1, temperature=0.5, model="gpt-4o", use_
 # Set up page config for chatbot layout
 st.set_page_config(page_title="HPVizionary", layout="wide")
 
+# Convert image to bytes
 def img_to_bytes(img_path):
     img_bytes = Path(img_path).read_bytes()
     encoded = base64.b64encode(img_bytes).decode()
     return encoded
 
+# Convert image to HTML
 def img_to_html(img_path):
     img_html = "<img src='data:image/png;base64,{}' width='100' class='logo'>".format(
         img_to_bytes(img_path)
@@ -49,6 +52,7 @@ image_path = 'hplogo.png'
 # Get the base64 image HTML
 image_html = img_to_html(image_path)
 
+# Create the HTML code for the logo and title
 html_code = f"""
     <div style="display: flex; flex-direction:column; align-items: center; justify-contents:center; margin-bottom:40px">
         {image_html}
@@ -56,6 +60,7 @@ html_code = f"""
     </div>
     """
 
+# Display the HTML code in the sidebar
 st.sidebar.markdown(html_code, unsafe_allow_html=True)
 
 # Custom CSS to style the entire file uploader, send button, and the bot icon
@@ -63,49 +68,40 @@ st.markdown(
     """
     <style>
        @import url('https://fonts.google.com/share?selection.family=Rubik:ital,wght@0,300..900;1,300..900');
-
     html, body {
         font-family: 'Rubik', sans-serif;
     }
-
     .stFileUploader {
         background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
         border-radius: 10px;
         padding: 20px;
     }
-
     .stFileUploader label {
         background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
         border: none !important;
     }
-
     div.stTextInput > div > div > button {
         background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
         color: white !important;
     }
-
     [data-testid="stSidebarHeader"] {
         display: none;
     }
-
     [data-testid="stMarkdownContainer"] p {
-    font-size: 16px;
-    font-weight: bold;    
+        font-size: 16px;
+        font-weight: bold;
     }
-
-     [data-testid="stMarkdownContainer"] h1 {
+    [data-testid="stMarkdownContainer"] h1 {
         font-size: 20px;
         font-weight: 700;
         text-align:center;
-        font-family: 'Rubik', sans-serif;     
+        font-family: 'Rubik', sans-serif;
     }
-
     [data-testid="stSidebarContent"] {
-       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-
     </style>
     """, unsafe_allow_html=True
 )
@@ -115,16 +111,13 @@ def base64_to_image(base64_string):
     byte_data = base64.b64decode(base64_string)
     return Image.open(BytesIO(byte_data))
 
-# Improved Function to extract relevant columns from the query
+# Function to extract relevant columns from the query
 def extract_columns_from_query(query, columns):
     """
     Extracts relevant columns based on the user query by matching keywords
     to the column names and detects if it's a comparison/statistics-based query.
     """
-    # Extract individual keywords from the query
     keywords = re.findall(r'\b\w+\b', query.lower())
-    
-    # Match columns based on keywords
     matched_columns = [col for col in columns if any(keyword in col.lower() for keyword in keywords)]
 
     # Handle complex queries involving comparisons/statistics
@@ -132,27 +125,47 @@ def extract_columns_from_query(query, columns):
         if len(matched_columns) < 2:  # Ensure at least 2 columns for comparison
             st.warning("Comparison requested but fewer than two relevant columns detected. Selecting the first two columns by default.")
             matched_columns = columns[:2]
-    
+
     # Handle statistics-related queries
     if any(word in query.lower() for word in ["mean", "average", "sum", "median", "min", "max", "statistic"]):
         if len(matched_columns) < 1:  # Default to the first column for stats
             st.warning("Statistics requested but no relevant columns detected. Selecting the first column by default.")
             matched_columns = columns[:1]
 
-    # Default to the first column if nothing is found
     if not matched_columns:
         st.warning("No relevant columns found. Defaulting to the first column.")
         matched_columns = columns[:1]
-    
+
     return matched_columns
 
 # Function to batch data into manageable chunks
 def batch_data(df, batch_size=50):
     num_batches = math.ceil(len(df) / batch_size)
     for i in range(num_batches):
-        yield df.iloc[i*batch_size: (i+1)*batch_size]
+        yield df.iloc[i * batch_size: (i + 1) * batch_size]
 
-# Function to generate data from relevant columns (for multiple columns)
+# Custom function to calculate statistics and send them to the model
+def calculate_statistics(df, relevant_columns):
+    """
+    Calculate relevant statistics (mean, median, min, max, etc.) for numeric columns
+    and return these as part of the model context. Non-numeric columns are excluded
+    from calculations like correlation.
+    """
+    # Filter relevant columns to only include numeric columns for statistics
+    numeric_columns = df[relevant_columns].select_dtypes(include=["number"])
+    
+    if numeric_columns.empty:
+        return "No numeric columns found for statistical analysis.", "No correlation data."
+
+    # Calculate statistics (mean, median, etc.) for numeric columns
+    stats_summary = numeric_columns.describe().transpose().to_csv(index=False)
+
+    # Calculate the correlation matrix for numeric columns
+    correlation_matrix = numeric_columns.corr().to_csv(index=False)
+    
+    return stats_summary, correlation_matrix
+
+# Function to generate data from relevant columns
 def generate_column_data(df, relevant_columns, max_rows=50):
     """
     Returns a structured and summarized version of the relevant columns from the DataFrame.
@@ -161,7 +174,6 @@ def generate_column_data(df, relevant_columns, max_rows=50):
     if not relevant_columns:
         return ""
 
-    # Create structured table-like string format for the relevant data
     data_summary = df[relevant_columns].head(max_rows).to_csv(index=False)
     return f"""### Relevant Data (showing up to {max_rows} rows):\n\n{data_summary}\n\n"""
 
@@ -173,7 +185,7 @@ if "history" not in st.session_state:
 with st.sidebar:
     st.write('Dashboard')
 
-    # File uploader for CSV files with blue box and white text
+    # File uploader for CSV files
     uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
 
     if uploaded_file:
@@ -181,18 +193,6 @@ with st.sidebar:
         df = pd.read_csv(uploaded_file)
         st.write("Preview of the dataset:")
         st.dataframe(df)
-
-# def img_to_bytes(img_path):
-#     img_bytes = Path(img_path).read_bytes()
-#     encoded = base64.b64encode(img_bytes).decode()
-#     return encoded
-# def img_to_html(img_path):
-#     img_html = "<img src='data:image/png;base64,{}' class='logo'>".format(
-#       img_to_bytes(img_path)
-#     )
-#     return img_html
-
-# st.markdown(img_to_html('hplogo.png'), unsafe_allow_html=True)
 
 # Input for user query
 prompt = st.chat_input("Ask a question or request a visualization")
@@ -211,7 +211,7 @@ if prompt and uploaded_file:
     relevant_columns = extract_columns_from_query(prompt, df.columns)
 
     # If no columns are matched or query is ambiguous, show a message
-    if len(relevant_columns) == 0:  # Ensure empty column check is accurate
+    if len(relevant_columns) == 0:
         st.error("No relevant columns found in the dataset for the given query.")
     
     # Handle Graphical Response if the query asks for a graph
@@ -248,15 +248,25 @@ if prompt and uploaded_file:
         batch_size = 50
 
         if relevant_columns:
+            # Calculate statistics for the relevant columns
+            stats_summary, correlation_matrix = calculate_statistics(df, relevant_columns)
+            
             for batch_df in batch_data(df[relevant_columns], batch_size=batch_size):
                 column_data = generate_column_data(batch_df, relevant_columns, max_rows=batch_size)
                 csv_context = f"The user has uploaded a dataset. Here is the data from the relevant columns:\n{column_data}"
 
+                # Include the calculated statistics in the prompt
                 prompt_template = f"""
                 You are an expert data analyst. The user has uploaded a CSV file containing the following data:
                 {csv_context}
 
-                Based on the user query, provide analysis in natural language, interpreting the relevant columns and their data points. Provide exact answers to the user.
+                ### Calculated Statistics:
+                {stats_summary}
+
+                ### Correlation Matrix:
+                {correlation_matrix}
+
+                Based on the user query, provide  the exact figures or points required, interpreting the relevant columns and their data points.
 
                 ### User Query:
                 {prompt}
