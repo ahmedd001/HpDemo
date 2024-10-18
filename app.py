@@ -2,11 +2,10 @@ import streamlit as st
 from lida import Manager, TextGenerationConfig, llm
 from dotenv import load_dotenv
 import os
-import openai
+from openai import OpenAI
 from PIL import Image
 from io import BytesIO
 import base64
-import re
 import pandas as pd
 import logging
 import math
@@ -17,12 +16,15 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Load environment variables and OpenAI key
 load_dotenv()
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # Check if the OpenAI API key is loaded
-if not openai.api_key:
+if not openai_api_key:
     st.error("OpenAI API key not found. Please ensure it is set in the .env file.")
     st.stop()  # Stop the app if the API key is missing
+
+# Initialize OpenAI client
+client = OpenAI(api_key=openai_api_key)
 
 # Initialize LIDA Manager and config without using cache to avoid old results
 def init_lida():
@@ -31,76 +33,55 @@ def init_lida():
 textgen_config = TextGenerationConfig(n=1, temperature=0.5, model="gpt-4o", use_cache=False)
 
 # Set up page config for chatbot layout
-st.set_page_config(page_title="HPVizionary", layout="wide")
+st.set_page_config(page_title="Vizionary", layout="wide")
 
-# Convert image to bytes
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-
-# Convert image to HTML
-def img_to_html(img_path):
-    img_html = "<img src='data:image/png;base64,{}' width='100' class='logo'>".format(
-        img_to_bytes(img_path)
-    )
-    return img_html
-
-# Path to your image
-image_path = 'hplogo.png'
-
-# Get the base64 image HTML
-image_html = img_to_html(image_path)
-
-# Create the HTML code for the logo and title
-html_code = f"""
-    <div style="display: flex; flex-direction:column; align-items: center; justify-contents:center; margin-bottom:40px">
-        {image_html}
-        <h1 style="font-size: 20px; margin: 0; position:absolute; top:40px ">HP Vizionary <span>MVP</span></h1>
-    </div>
-    """
-
-# Display the HTML code in the sidebar
-st.sidebar.markdown(html_code, unsafe_allow_html=True)
-
-# Custom CSS to style the entire file uploader, send button, and the bot icon
+# Custom CSS to enhance the chatbot UI
 st.markdown(
     """
     <style>
-       @import url('https://fonts.google.com/share?selection.family=Rubik:ital,wght@0,300..900;1,300..900');
+    /* General Styles */
     html, body {
         font-family: 'Rubik', sans-serif;
+        background-color: #f9f9f9;
     }
-    .stFileUploader {
-        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
-        color: white !important;
+    .stButton > button {
+        background: linear-gradient(145deg, #6a11cb 0%, #2575fc 100%);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 14px;
         border-radius: 10px;
-        padding: 20px;
+        margin-top: 10px;
+        transition: background 0.3s ease-in-out;
     }
-    .stFileUploader label {
-        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
-        color: white !important;
-        border: none !important;
+    .stButton > button:hover {
+        background: linear-gradient(145deg, #5b10a6 0%, #1e62b2 100%);
     }
-    div.stTextInput > div > div > button {
-        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
-        color: white !important;
+    .stTextInput > div > div > input {
+        border-radius: 10px;
+        padding: 10px;
     }
-    [data-testid="stSidebarHeader"] {
-        display: none;
+    /* Chat Bubbles */
+    .user-bubble {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        max-width: 70%;
     }
-    [data-testid="stMarkdownContainer"] p {
-        font-size: 16px;
-        font-weight: bold;
+    .assistant-bubble {
+        background-color: #e6e6e6;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        max-width: 70%;
+        color: black;
     }
-    [data-testid="stMarkdownContainer"] h1 {
-        font-size: 20px;
-        font-weight: 700;
-        text-align:center;
-        font-family: 'Rubik', sans-serif;
-    }
-    [data-testid="stSidebarContent"] {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .chat-container {
+        margin: 20px 0;
     }
     </style>
     """, unsafe_allow_html=True
@@ -111,71 +92,18 @@ def base64_to_image(base64_string):
     byte_data = base64.b64decode(base64_string)
     return Image.open(BytesIO(byte_data))
 
-# Function to extract relevant columns from the query
-def extract_columns_from_query(query, columns):
-    """
-    Extracts relevant columns based on the user query by matching keywords
-    to the column names and detects if it's a comparison/statistics-based query.
-    """
-    keywords = re.findall(r'\b\w+\b', query.lower())
-    matched_columns = [col for col in columns if any(keyword in col.lower() for keyword in keywords)]
-
-    # Handle complex queries involving comparisons/statistics
-    if any(word in query.lower() for word in ["compare", "difference", "vs", "between", "correlate"]):
-        if len(matched_columns) < 2:  # Ensure at least 2 columns for comparison
-            st.warning("Comparison requested but fewer than two relevant columns detected. Selecting the first two columns by default.")
-            matched_columns = columns[:2]
-
-    # Handle statistics-related queries
-    if any(word in query.lower() for word in ["mean", "average", "sum", "median", "min", "max", "statistic"]):
-        if len(matched_columns) < 1:  # Default to the first column for stats
-            st.warning("Statistics requested but no relevant columns detected. Selecting the first column by default.")
-            matched_columns = columns[:1]
-
-    if not matched_columns:
-        st.warning("No relevant columns found. Defaulting to the first column.")
-        matched_columns = columns[:1]
-
-    return matched_columns
-
 # Function to batch data into manageable chunks
 def batch_data(df, batch_size=50):
     num_batches = math.ceil(len(df) / batch_size)
     for i in range(num_batches):
         yield df.iloc[i * batch_size: (i + 1) * batch_size]
 
-# Custom function to calculate statistics and send them to the model
-def calculate_statistics(df, relevant_columns):
+# Function to generate data for OpenAI API
+def generate_data_for_model(df, max_rows=50):
     """
-    Calculate relevant statistics (mean, median, min, max, etc.) for numeric columns
-    and return these as part of the model context. Non-numeric columns are excluded
-    from calculations like correlation.
+    Prepares a summarized version of the dataset for the model, respecting token limits.
     """
-    # Filter relevant columns to only include numeric columns for statistics
-    numeric_columns = df[relevant_columns].select_dtypes(include=["number"])
-    
-    if numeric_columns.empty:
-        return "No numeric columns found for statistical analysis.", "No correlation data."
-
-    # Calculate statistics (mean, median, etc.) for numeric columns
-    stats_summary = numeric_columns.describe().transpose().to_csv(index=False)
-
-    # Calculate the correlation matrix for numeric columns
-    correlation_matrix = numeric_columns.corr().to_csv(index=False)
-    
-    return stats_summary, correlation_matrix
-
-# Function to generate data from relevant columns
-def generate_column_data(df, relevant_columns, max_rows=50):
-    """
-    Returns a structured and summarized version of the relevant columns from the DataFrame.
-    Limits the number of rows to fit within the token limits while preserving relationships.
-    """
-    if not relevant_columns:
-        return ""
-
-    data_summary = df[relevant_columns].head(max_rows).to_csv(index=False)
-    return f"""### Relevant Data (showing up to {max_rows} rows):\n\n{data_summary}\n\n"""
+    return df.head(max_rows).to_csv(index=False)
 
 # Track conversation history using session state
 if "history" not in st.session_state:
@@ -183,58 +111,48 @@ if "history" not in st.session_state:
 
 # Sidebar for file upload and API key entry
 with st.sidebar:
-    st.write('Dashboard')
-
-    # File uploader for CSV files
+    st.write('📊 **Dashboard**')
     uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
 
     if uploaded_file:
-        # Read the uploaded CSV file into a DataFrame
         df = pd.read_csv(uploaded_file)
-        st.write("Preview of the dataset:")
+        st.write("🔍 **Preview of the dataset:**")
         st.dataframe(df)
 
-# Input for user query
 prompt = st.chat_input("Ask a question or request a visualization")
 
-# Function to reset LIDA cache and reinitialize
+suggestions = [
+    "List all the work orders completed within the Requested Date Time (RDT).",
+    "List all the work orders whose response is met.",
+    "List all the work orders with their delay code and time of delay.",
+    "Make a pie chart for the top 5 managers based on their number of work orders.",
+    "What are the delay reasons for work orders completed after RDT?",
+    "How many work orders have not been completed (no response)?",
+    "What was the average delay (in days) for work orders not completed on time?",
+]
+
+st.markdown("### 💡 **Suggested Queries**")
+for suggestion in suggestions:
+    if st.button(suggestion):
+        prompt = suggestion
+
 def reset_lida_cache():
-    """Function to reset LIDA cache and reinitialize it for fresh graph generation."""
     lida = init_lida()  # Reinitialize LIDA Manager to avoid using cached models
     return lida
 
 if prompt and uploaded_file:
-    # Add user's input to session history
     st.session_state.history.append({"role": "user", "content": prompt})
 
-    # Check for relevant columns in the dataset based on the query
-    relevant_columns = extract_columns_from_query(prompt, df.columns)
-
-    # If no columns are matched or query is ambiguous, show a message
-    if len(relevant_columns) == 0:
-        st.error("No relevant columns found in the dataset for the given query.")
-    
-    # Handle Graphical Response if the query asks for a graph
-    elif any(word in prompt.lower() for word in ["graph", "plot", "visualize"]):
-        if relevant_columns:
-            column_data = generate_column_data(df, relevant_columns)
-            csv_context = f"The user has uploaded a dataset. Here is the data from the relevant columns:\n{column_data}"
-        else:
-            column_data = df.to_string(index=False)
-            csv_context = f"The user has uploaded a dataset. Here is the entire dataset:\n{column_data}"
-
+    if any(word in prompt.lower() for word in ["graph", "plot", "visualize", "pie"]):
         with st.chat_message("assistant"):
-            st.markdown("Generating a graph based on your query...")
+            st.markdown("🛠️ Generating a graph based on your query...")
 
         try:
-            # Reinitialize LIDA and regenerate graphs for each query, ensuring no caching is done
             lida = reset_lida_cache()
-
-            # Pass the relevant columns from the DataFrame instead of the entire dataset
-            summary = lida.summarize(df[relevant_columns], summary_method="default", textgen_config=textgen_config)
+            csv_context = f"The user has uploaded a dataset. Here is the summarized data:\n{generate_data_for_model(df)}"
+            summary = lida.summarize(df, summary_method="default", textgen_config=textgen_config)
             charts = lida.visualize(summary=summary, goal=prompt, textgen_config=textgen_config)
 
-            # Display the generated charts dynamically for the current dataset
             for chart in charts:
                 image_base64 = chart.raster
                 img = base64_to_image(image_base64)
@@ -243,64 +161,46 @@ if prompt and uploaded_file:
             st.error(f"Error generating graph: {str(e)}")
 
     else:
-        # Handle textual analysis with multiple batches if necessary
         all_responses = []
         batch_size = 50
 
-        if relevant_columns:
-            # Calculate statistics for the relevant columns
-            stats_summary, correlation_matrix = calculate_statistics(df, relevant_columns)
-            
-            for batch_df in batch_data(df[relevant_columns], batch_size=batch_size):
-                column_data = generate_column_data(batch_df, relevant_columns, max_rows=batch_size)
-                csv_context = f"The user has uploaded a dataset. Here is the data from the relevant columns:\n{column_data}"
+        for batch_df in batch_data(df, batch_size=batch_size):
+            column_data = generate_data_for_model(batch_df, max_rows=batch_size)
+            csv_context = f"The user has uploaded a dataset. Here is the data from the dataset:\n{column_data}"
 
-                # Include the calculated statistics in the prompt
-                prompt_template = f"""
-                You are an expert data analyst. The user has uploaded a CSV file containing the following data:
-                {csv_context}
+            prompt_template = f"""
+            You are an expert data analyst. The user has uploaded a CSV file containing the following data:
+            {csv_context}
 
-                ### Calculated Statistics:
-                {stats_summary}
+            Based on the user query, provide the exact figures or points required.
 
-                ### Correlation Matrix:
-                {correlation_matrix}
+            ### User Query:
+            {prompt}
+            """
 
-                Based on the user query, provide  the exact figures or points required, interpreting the relevant columns and their data points.
+            try:
+                response = client.chat.completions.create(
+                    model="gpt-4o",
+                    messages=[{"role": "user", "content": prompt_template}],
+                    max_tokens=500
+                )
+                bot_response = response.choices[0].message.content
+                all_responses.append(bot_response)
 
-                ### User Query:
-                {prompt}
-                """
+            except Exception as e:
+                st.error(f"Error generating response: {str(e)}")
 
-                logging.debug(f"Sending request to OpenAI API with prompt: {prompt_template}")
+        combined_response = "\n\n".join(all_responses)
+        st.session_state.history.append({"role": "assistant", "content": combined_response})
 
-                try:
-                    # Use the correct method for creating a chat completion
-                    response = openai.chat.completions.create(
-                        model="gpt-4o",
-                        messages=[{"role": "user", "content": prompt_template}],
-                        max_tokens=500
-                    )
-
-                    # Extracting the response content correctly
-                    bot_response = response.choices[0].message.content
-                    all_responses.append(bot_response)
-
-                except Exception as e:
-                    st.error(f"Error generating response: {str(e)}")
-
-            # Combine all batch responses
-            combined_response = "\n\n".join(all_responses)
-            st.session_state.history.append({"role": "assistant", "content": combined_response})
-
-# Display chat history in the UI
+# Display chat history with improved UI
 for entry in st.session_state.history:
     if entry["role"] == "user":
         with st.chat_message("user"):
-            st.markdown(entry["content"])
+            st.markdown(f"<div class='user-bubble'>{entry['content']}</div>", unsafe_allow_html=True)
     elif entry.get("type") == "chart":
         with st.chat_message("assistant"):
             st.image(entry["image"])
     else:
         with st.chat_message("assistant"):
-            st.markdown(entry["content"])
+            st.markdown(f"<div class='assistant-bubble'>{entry['content']}</div>", unsafe_allow_html=True)
