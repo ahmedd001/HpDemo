@@ -35,53 +35,74 @@ textgen_config = TextGenerationConfig(n=1, temperature=0.5, model="gpt-4o", use_
 # Set up page config for chatbot layout
 st.set_page_config(page_title="Vizionary", layout="wide")
 
-# Custom CSS to enhance the chatbot UI
+# # Convert image to bytes
+# def img_to_bytes(img_path):
+#     img_bytes = Path(img_path).read_bytes()
+#     encoded = base64.b64encode(img_bytes).decode()
+#     return encoded
+
+# # Convert image to HTML
+# def img_to_html(img_path):
+#     img_html = "<img src='data:image/png;base64,{}' width='100' class='logo'>".format(
+#         img_to_bytes(img_path)
+#     )
+#     return img_html
+
+# # Path to your image
+# image_path = 'hplogo.png'
+
+# # Get the base64 image HTML
+# image_html = img_to_html(image_path)
+
+# # Create the HTML code for the logo and title
+# html_code = f"""
+#     <div style="display: flex; flex-direction:column; align-items: center; justify-contents:center; margin-bottom:40px">
+#         {image_html}
+#         <h1 style="font-size: 20px; margin: 0; position:absolute; top:40px ">HP Vizionary <span>MVP</span></h1>
+#     </div>
+#     """
+
+# Display the HTML code in the sidebar
+#st.sidebar.markdown(html_code, unsafe_allow_html=True)
+
+# Custom CSS to style the entire file uploader, send button, and the bot icon
 st.markdown(
     """
     <style>
-    /* General Styles */
+       @import url('https://fonts.google.com/share?selection.family=Rubik:ital,wght@0,300..900;1,300..900');
     html, body {
         font-family: 'Rubik', sans-serif;
-        background-color: #f9f9f9;
     }
-    .stButton > button {
-        background: linear-gradient(145deg, #6a11cb 0%, #2575fc 100%);
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        font-size: 14px;
+    .stFileUploader {
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
+        color: white !important;
         border-radius: 10px;
-        margin-top: 10px;
-        transition: background 0.3s ease-in-out;
+        padding: 20px;
     }
-    .stButton > button:hover {
-        background: linear-gradient(145deg, #5b10a6 0%, #1e62b2 100%);
+    .stFileUploader label {
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
+        color: white !important;
+        border: none !important;
     }
-    .stTextInput > div > div > input {
-        border-radius: 10px;
-        padding: 10px;
+    div.stTextInput > div > div > button {
+        background: linear-gradient(107.91deg, #3673EA 7.37%, #4623E9 95.19%) !important;
+        color: white !important;
     }
-    /* Chat Bubbles */
-    .user-bubble {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        display: inline-block;
-        max-width: 70%;
+    [data-testid="stSidebarHeader"] {
+        display: none;
     }
-    .assistant-bubble {
-        background-color: #e6e6e6;
-        padding: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        display: inline-block;
-        max-width: 70%;
-        color: black;
+    [data-testid="stMarkdownContainer"] p {
+        font-size: 16px;
+        font-weight: bold;
     }
-    .chat-container {
-        margin: 20px 0;
+    [data-testid="stMarkdownContainer"] h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align:center;
+        font-family: 'Rubik', sans-serif;
+    }
+    [data-testid="stSidebarContent"] {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     </style>
     """, unsafe_allow_html=True
@@ -111,16 +132,21 @@ if "history" not in st.session_state:
 
 # Sidebar for file upload and API key entry
 with st.sidebar:
-    st.write('📊 **Dashboard**')
+    st.write('Dashboard')
+
+    # File uploader for CSV files
     uploaded_file = st.file_uploader("Upload your CSV file", type="csv")
 
     if uploaded_file:
+        # Read the uploaded CSV file into a DataFrame
         df = pd.read_csv(uploaded_file)
-        st.write("🔍 **Preview of the dataset:**")
+        st.write("Preview of the dataset:")
         st.dataframe(df)
 
+# Input for user query
 prompt = st.chat_input("Ask a question or request a visualization")
 
+# Clickable suggestions
 suggestions = [
     "List all the work orders completed within the Requested Date Time (RDT).",
     "List all the work orders whose response is met.",
@@ -131,28 +157,39 @@ suggestions = [
     "What was the average delay (in days) for work orders not completed on time?",
 ]
 
-st.markdown("### 💡 **Suggested Queries**")
+# Display clickable suggestions in the chat
+st.markdown("### Suggested Queries:")
 for suggestion in suggestions:
     if st.button(suggestion):
         prompt = suggestion
 
+# Function to reset LIDA cache and reinitialize
 def reset_lida_cache():
+    """Function to reset LIDA cache and reinitialize it for fresh graph generation."""
     lida = init_lida()  # Reinitialize LIDA Manager to avoid using cached models
     return lida
 
 if prompt and uploaded_file:
+    # Add user's input to session history
     st.session_state.history.append({"role": "user", "content": prompt})
 
+    # Handle Graphical Response if the query asks for a graph
     if any(word in prompt.lower() for word in ["graph", "plot", "visualize", "pie"]):
         with st.chat_message("assistant"):
-            st.markdown("🛠️ Generating a graph based on your query...")
+            st.markdown("Generating a graph based on your query...")
 
         try:
+            # Reinitialize LIDA and regenerate graphs for each query, ensuring no caching is done
             lida = reset_lida_cache()
+
+            # Prepare the dataset summary for graphing
             csv_context = f"The user has uploaded a dataset. Here is the summarized data:\n{generate_data_for_model(df)}"
+            
+            # Request LIDA to generate charts
             summary = lida.summarize(df, summary_method="default", textgen_config=textgen_config)
             charts = lida.visualize(summary=summary, goal=prompt, textgen_config=textgen_config)
 
+            # Display the generated charts dynamically for the current dataset
             for chart in charts:
                 image_base64 = chart.raster
                 img = base64_to_image(image_base64)
@@ -161,13 +198,16 @@ if prompt and uploaded_file:
             st.error(f"Error generating graph: {str(e)}")
 
     else:
+        # Handle textual analysis with multiple batches if necessary
         all_responses = []
         batch_size = 50
 
+        # Calculate the data for each batch
         for batch_df in batch_data(df, batch_size=batch_size):
             column_data = generate_data_for_model(batch_df, max_rows=batch_size)
             csv_context = f"The user has uploaded a dataset. Here is the data from the dataset:\n{column_data}"
 
+            # Include the data in the prompt
             prompt_template = f"""
             You are an expert data analyst. The user has uploaded a CSV file containing the following data:
             {csv_context}
@@ -178,29 +218,44 @@ if prompt and uploaded_file:
             {prompt}
             """
 
+            logging.debug(f"Sending request to OpenAI API with prompt: {prompt_template}")
+
             try:
+                # Use the correct method for creating a chat completion
                 response = client.chat.completions.create(
                     model="gpt-4o",
                     messages=[{"role": "user", "content": prompt_template}],
                     max_tokens=500
                 )
+
+                # Extracting the response content correctly
                 bot_response = response.choices[0].message.content
                 all_responses.append(bot_response)
 
             except Exception as e:
                 st.error(f"Error generating response: {str(e)}")
 
+        # Combine all batch responses
         combined_response = "\n\n".join(all_responses)
         st.session_state.history.append({"role": "assistant", "content": combined_response})
 
-# Display chat history with improved UI
+# Display chat history in the UI
 for entry in st.session_state.history:
     if entry["role"] == "user":
         with st.chat_message("user"):
-            st.markdown(f"<div class='user-bubble'>{entry['content']}</div>", unsafe_allow_html=True)
+            st.markdown(entry["content"])
     elif entry.get("type") == "chart":
         with st.chat_message("assistant"):
             st.image(entry["image"])
     else:
         with st.chat_message("assistant"):
-            st.markdown(f"<div class='assistant-bubble'>{entry['content']}</div>", unsafe_allow_html=True)
+            st.markdown(entry["content"])
+
+
+
+
+
+
+
+
+
